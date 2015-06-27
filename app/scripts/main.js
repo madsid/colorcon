@@ -1,10 +1,18 @@
 $(document).ready(function () {
     /* Setting the box height to the window size on browser*/
-    $('.box').height($(window).height() - 115 + "px");
+    var newHeight =$(window).height() - 85;
+    if($(window).width()<768){
+      newHeight =$(window).height() - 50;
+    }
+    $('.box').css({"height":newHeight + "px"});
 
     /* All events that must happen if window resizes */
     $(window).resize(function () {
-       // $('.box').height($(document).height() - 115 + "px"); //Issue background image Disaapears
+       newHeight =$(window).height() - 85;
+       if($(window).width()<768){
+         newHeight =$(window).height() - 50;
+       }
+       $('.box').css({"height":newHeight + "px"}); //Issue background image Disaapears
     });
 
     /* code for color box */
@@ -22,8 +30,8 @@ $(document).ready(function () {
             //$('.bottomMenu').fadeOut();
         }
 
-        // Show element after user scrolls past 
-        // the top edge of its parent 
+        // Show element after user scrolls past
+        // the top edge of its parent
         $('.anim').each(function () {
             var t = $(this).parent().offset().top - 60;
             if (y > t) {
@@ -79,8 +87,8 @@ $(document).ready(function () {
 
     function handle(delta) {
         var time = 350; // delay time
-        var distance = 120; // delta point 
-        // Dom where it will apply 
+        var distance = 120; // delta point
+        // Dom where it will apply
         $('html, body').stop().animate({
             scrollTop: $(window).scrollTop() - (distance * delta)
         }, {

@@ -10,13 +10,16 @@ website: http://colorcan.in
 
 /* Bootstrap Override styles*/
 .navbar-brand {
-    padding: 0;
-    margin-top:-6px;
+    padding: 5px;
+}
+.navbar-brand img{
+    height: 100%;
 }
 
 .navbar {
     border-radius:0;
     margin-bottom:0;
+    text-transform : uppercase;
 }
 
 .navbar-default {
@@ -38,7 +41,7 @@ website: http://colorcan.in
 
 /* Website styles */
 body {
-   outline:none; 
+   outline:none;
    background-color:#FFF;
    font-family: 'Open Sans', sans-serif;
 }
@@ -61,20 +64,28 @@ body {
 .color-box {
     position:absolute;
     bottom:30px;
-    right:40px;
     width:230px;
-    height:50px;
+    height:35px;
+    right:50%;
+    margin-right:-115px;
     padding:5px 10px;
     z-index:1000;
-    background-color:#FFF;
-    opacity: 0.75;
-    filter: alpha(opacity=75); 
+    background-color:#F8F8F8;
+    /*opacity: 0.75;
+    filter: alpha(opacity=75);*/
     display:inline;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 .color-box img {
     width:20px;
-    height:40px;
     float:left;
     margin:0 5px;
     cursor:pointer;
@@ -114,8 +125,8 @@ body {
 #about-desc h1 {
     font-weight:bold;
     margin: auto;
-    text-align:center; 
-    text-transform:uppercase;   
+    text-align:center;
+    text-transform:uppercase;
     padding-bottom: 2%;
 }
 
@@ -162,7 +173,7 @@ body {
         padding-left:150px;
         padding-right:150px;
     }
-   
+
     /* Remove the padding we set earlier */
     .header,
     .marketing,
@@ -170,12 +181,29 @@ body {
         padding-left: 0;
         padding-right: 0;
     }
-
+    .color-box {
+        bottom:30px;
+        right:40px;
+        width:300px;
+        height:45px;
+        margin-right:0px;
+    }
+    .color-box img {
+        width:30px;
+    }
     /*Navbar*/
     .navbar {
-        padding:15px 90px;
+        padding: 15px 90px;
     }
-
+    .navbar-brand {
+        padding:0px 0px 0px 40px;
+        height: 67px;
+        margin-top: -10px;
+        margin-bottom: -5px;
+    }
+    .navbar-brand img{
+      height: 100%;
+    }
     /* Space out the masthead */
     .header {
         margin-bottom: 30px;
