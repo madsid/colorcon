@@ -1,0 +1,184 @@
+/* --------------------------------------------------------
+Style Sheet for color can
+
+version: 0.0.1
+last modified: 6.24.2015 by sidhartha madipalli
+author: sidhartha madipalli
+email: hello@madsid.com
+website: http://colorcan.in
+----------------------------------------------------------*/
+
+/* Bootstrap Override styles*/
+.navbar-brand {
+    padding: 0;
+    margin-top:-6px;
+}
+
+.navbar {
+    border-radius:0;
+    margin-bottom:0;
+}
+
+.navbar-default {
+    /*opacity: 0.95;
+    filter: alpha(opacity=95); */
+}
+
+.navbar-right li:hover{
+    background-color:#E74C3C;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color:#FFF;
+}
+
+.navbar-default .navbar-nav > li.selected > a{
+    color:#FFF;
+}
+
+/* Website styles */
+body {
+   outline:none; 
+   background-color:#FFF;
+   font-family: 'Open Sans', sans-serif;
+}
+
+.selected {
+    background-color:#E74C3C;
+    color:#FFF;
+}
+
+.box {
+    height:auto;
+    padding:15px;
+}
+
+.box2 {
+    height:auto;
+    padding:5% 15%;
+}
+
+.color-box {
+    position:absolute;
+    bottom:30px;
+    right:40px;
+    width:230px;
+    height:50px;
+    padding:5px 10px;
+    z-index:1000;
+    background-color:#FFF;
+    opacity: 0.75;
+    filter: alpha(opacity=75); 
+    display:inline;
+}
+
+.color-box img {
+    width:20px;
+    height:40px;
+    float:left;
+    margin:0 5px;
+    cursor:pointer;
+}
+
+.launch {
+    background-image:url(../images/sample-background.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    overflow:visible;
+}
+
+#launch-caption {
+    width:35%;
+    color:#FFF;
+    position:relative;
+    left:65%;
+    top:20%;
+}
+
+#launch-caption * {
+    font-weight:300;
+}
+
+.about {
+    background-color: #FFF;
+    color:#555;
+    padding-top:4%;
+}
+
+#about-desc {
+    font-weight: 400;
+    text-align:justify;
+}
+
+#about-desc h1 {
+    font-weight:bold;
+    margin: auto;
+    text-align:center; 
+    text-transform:uppercase;   
+    padding-bottom: 2%;
+}
+
+#about-desc p {
+    font-size:103%;
+}
+
+.contact {
+    background-color: #F5F5F5;
+}
+
+/* Everything gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .container {
+        /*max-width: 730px;*/
+    }
+
+    .box {
+        padding-left:150px;
+        padding-right:150px;
+    }
+   
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /*Navbar*/
+    .navbar {
+        padding:15px 90px;
+    }
+
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 30px;
+    }
+
+}
