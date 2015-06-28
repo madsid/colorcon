@@ -1,3 +1,12 @@
+var newImagePath=""; // declaring to be used for changing ".launch" backround
+/* array for preloading images */
+var myimages=new Array()
+function preloadimages(){
+    for (i=0;i<preloadimages.arguments.length;i++){
+        myimages[i]=new Image();
+        myimages[i].src=preloadimages.arguments[i];
+    }
+}
 $(document).ready(function () {
     /* Setting the box height to the window size on browser*/
     var newHeight =$(window).height() - 85;
@@ -14,10 +23,13 @@ $(document).ready(function () {
        }
        $('.box').css({"height":newHeight + "px"}); //Issue background image Disaapears
     });
-
+    preloadimages('images/color-red.jpg', 'images/color-yellow.jpg', 'images/color-green.jpg', 'images/color-light-yellow.jpg', 'images/color-blue.jpg', 'images/color-violet.jpg', 'images/color-light-violet.jpg');
     /* code for color box */
     $('.color').click(function () {
         console.log($(this)[0].id);
+        newImagePath="url('images/"+$(this)[0].id+".jpg')";
+        console.log(newImagePath);
+        $('.launch').css({"background-image":newImagePath});
     });
 
     /* Display on scroll animation */

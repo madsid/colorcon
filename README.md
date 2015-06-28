@@ -14,3 +14,9 @@
  - fixed responsive positioning of leaves and added border radius to ".color-box"
  - made nav text uppercase
  - fixed ".box" height adjustment.
+
+# pre-gohan
+ - fixed favicon link
+ - added color changer to ".launch" baackground image
+  - transition works only in chrome
+  - need to find better method to preload images
