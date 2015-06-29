@@ -96,11 +96,14 @@ body {
 }
 
 .launch {
-    background-image:url(../images/sample-background.jpg);
+    background-image:url(../images/color-red.jpg);
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center;
     overflow:visible;
+    -webkit-transition: background .3s ease-in-out;
+    -o-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
 }
 
 #launch-caption {
