@@ -25,13 +25,15 @@ $(document).ready(function () {
        }
        $('.box').css({"height":newHeight + "px"}); //Issue background image Disaapears sometimes
     });
+
     preloadimages('images/color-red.jpg', 'images/color-yellow.jpg', 'images/color-green.jpg', 'images/color-light-yellow.jpg', 'images/color-blue.jpg', 'images/color-violet.jpg', 'images/color-light-violet.jpg');
     /* code for color box */
     $('.color').click(function () {
         console.log($(this)[0].id);
         newImagePath="url('images/"+$(this)[0].id+".jpg')";
         console.log(newImagePath);
-        $('.launch').css({"background-image":newImagePath});
+        $('.launch').css({ "background-image": newImagePath });
+        $('.fill').css({ "background-image": newImagePath });
     });
 
     /* front page display animations */
