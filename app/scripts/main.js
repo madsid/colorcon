@@ -1,10 +1,12 @@
 $(document).ready(function () {
+
     /* Setting the box height to the window size on browser*/
-    var newHeight =$(window).height() - 85;
+    var newHeight = $(window).height() - 85;
     if($(window).width()<768){
       newHeight =$(window).height() - 50;
     }
     $('.box').css({"height":newHeight + "px"});
+
 
     /* All events that must happen if window resizes */
     $(window).resize(function () {
@@ -12,13 +14,16 @@ $(document).ready(function () {
        if($(window).width()<768){
          newHeight =$(window).height() - 50;
        }
-       $('.box').css({"height":newHeight + "px"}); //Issue background image Disaapears
+       $('.box').css({"height":newHeight + "px"}); //Issue background image Disaapears sometimes
     });
 
     /* code for color box */
     $('.color').click(function () {
         console.log($(this)[0].id);
     });
+
+    /* front page display animations */
+    $('.cool-display').delay(200).fadeIn(500);
 
     /* Display on scroll animation */
     $(document).scroll(function () {

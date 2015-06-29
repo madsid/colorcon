@@ -46,6 +46,10 @@ body {
    font-family: 'Open Sans', sans-serif;
 }
 
+.cool-display {
+    display:none;
+}
+
 .selected {
     background-color:#E74C3C;
     color:#FFF;
@@ -134,9 +138,49 @@ body {
     font-size:103%;
 }
 
-.contact {
+.testimonials {
     background-color: #F5F5F5;
+    color:#555;
+    padding-top:4%;
 }
+
+#testimonials-desc {
+    font-weight: 400;
+    text-align:justify;
+}
+
+#testimonials-desc h1 {
+    font-weight:bold;
+    margin: auto;
+    text-align:center;
+    text-transform:uppercase;
+    padding-bottom: 2%;
+}
+
+.contact {
+    background-color: #333;
+    color:#ccc;
+    padding-top:4%;
+}
+
+#contact-desc {
+    font-weight: 400;
+    text-align:justify;
+}
+
+#contact-desc h1 {
+    font-weight:bold;
+    margin: auto;
+    text-align:center;
+    text-transform:uppercase;
+    padding-bottom: 2%;
+}
+
+#contact-desc p {
+    font-size:103%;
+    text-align:center;
+}
+
 
 /* Everything gets side spacing for mobile first views */
 .header,
@@ -160,6 +204,39 @@ body {
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
+}
+
+/* Full width Slider */
+.carousel,
+.item,
+.active {
+    height: 100%;
+    padding:0;
+}
+
+.carousel-inner {
+    height: 100%;
+    width:100%;
+    position:absolute;
+    left:0;
+}
+
+.carousel-control.left{
+    background:none;
+}
+
+.carousel-control.right {
+    background:none;
+}
+
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
 }
 
 
