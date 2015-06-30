@@ -26,13 +26,13 @@ $(document).ready(function () {
        $('.box').css({"height":newHeight + "px"}); //Issue background image Disaapears sometimes
     });
 
-    preloadimages('images/color-red.jpg', 'images/color-yellow.jpg', 'images/color-green.jpg', 'images/color-light-yellow.jpg', 'images/color-blue.jpg', 'images/color-violet.jpg', 'images/color-light-violet.jpg');
+    preloadimages('bgs/color-red.jpg', 'bgs/color-yellow.jpg', 'bgs/color-green.jpg', 'bgs/color-light-yellow.jpg', 'bgs/color-blue.jpg', 'bgs/color-violet.jpg', 'bgs/color-light-violet.jpg');
     /* code for color box */
     $('.color').click(function () {
         console.log($(this)[0].id);
-        newImagePath="url('images/"+$(this)[0].id+".jpg')";
+        newImagePath="url('bgs/"+$(this)[0].id+".jpg')";
         console.log(newImagePath);
-        $('.launch').css({ "background-image": newImagePath });
+        /* $('.launch').css({ "background-image": newImagePath }); */
         $('.fill').css({ "background-image": newImagePath });
     });
 

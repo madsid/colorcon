@@ -95,8 +95,9 @@ body {
     cursor:pointer;
 }
 
+/* Commenting out old launch
 .launch {
-    background-image:url(../images/color-red.jpg);
+    background-image:url(../bgs/color-red.jpg);
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center;
@@ -116,6 +117,64 @@ body {
 
 #launch-caption * {
     font-weight:300;
+}
+*/
+.launch .carousel-indicators {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  z-index: 15;
+  width: 80%;
+  max-width: 230px;
+  margin-left: 0px;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  text-align: center;
+  list-style: none;
+  background-color: rgba(0, 0, 0, .6);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.launch .carousel-indicators li {
+  display: inline-block;
+  width:auto;
+  height:auto;
+  padding: 5px 10px;
+  margin: 1px;
+  cursor: pointer;
+  text-indent: 0px;
+  background-color: #000 \9;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  border-radius: 0px;
+  color: #F5F5F5;
+}
+.launch .carousel-indicators .active {
+  margin: 0;
+  background-color: #000 \9;
+  background-color: rgba(0, 0, 0, 0);
+  border-top: 2px solid #F5F5F5;
+  border-bottom: 2px solid #F5F5F5;
+}
+
+.launch .carousel-caption{
+  bottom: 80px;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.launch .carousel-caption h2{
+  font-size: 150%;
 }
 
 .about {
@@ -144,21 +203,41 @@ body {
 .testimonials {
     background-color: #F5F5F5;
     color:#555;
-    padding-top:4%;
+    padding-top: 4%;
+    max-height: 250px;
 }
 
-#testimonials-desc {
+.testimonials-desc {
     font-weight: 400;
-    text-align:justify;
+    text-align: justify;
 }
 
-#testimonials-desc h1 {
-    font-weight:bold;
+.testimonials-desc h1 {
+    font-weight:500;
     margin: auto;
     text-align:center;
-    text-transform:uppercase;
-    padding-bottom: 2%;
+    padding: 0% 12% 2% 12%;
+    font-style: italic;
+    position: absolute;
+    top:50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size:125%;
+    color:#666;
 }
+
+.testimonials .carousel-indicators li{
+  background-color: #000 \9;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #999;
+}
+
+.testimonials .carousel-indicators .active {
+  background-color: #999;
+}
+
 
 .contact {
     background-color: #333;
@@ -288,5 +367,18 @@ body {
     .header {
         margin-bottom: 30px;
     }
+    /* launch */
+    .launch .carousel-indicators {
+      bottom: 30px;
+    }
 
+    .launch .carousel-caption{
+      bottom: 50px;
+    }
+
+    /* Testimonials */
+    .testimonials-desc h1 {
+        padding: 0% 10% 2% 10%;
+        font-size:210%;
+    }
 }

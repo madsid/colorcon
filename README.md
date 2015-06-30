@@ -17,6 +17,14 @@
 
 # pre-gohan
  - fixed favicon link
- - added color changer to ".launch" baackground image
+ - added color changer to ".launch" background image
   - transition works only in chrome
   - need to find better method to preload images
+
+# kid-gohan
+![kid-gohan](http://vignette1.wikia.nocookie.net/dragonball/images/8/85/GohanDebutNV.png/revision/latest/scale-to-width-down/180?cb=20100502143646)
+  - modified testimonial slider
+   - made "testimonials-desc" a class instead of id to apply to multiple elements
+  - modified launch slider
+  - modified grunt task to ignore color-backgrounds
+   - moved color-backgrounds out of "images" folder to "bgs" folder.
