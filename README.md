@@ -28,3 +28,12 @@
   - modified launch slider
   - modified grunt task to ignore color-backgrounds
    - moved color-backgrounds out of "images" folder to "bgs" folder.
+
+# masenko-gohan
+![masenko-gohan](http://vignette3.wikia.nocookie.net/dragonball/images/a/a3/021-18.jpg/revision/latest/scale-to-width-down/180?cb=20110626231457)
+
+###### The following changes were made as suggested by Arjun Singh
+ - added responsive "click to choose color" message
+ - reduced left and right padding in navbar
+ - increased font-size of "color can" in logo to make it visible on mobile
+ - responsive "back to top" link

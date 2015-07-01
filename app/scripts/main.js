@@ -29,12 +29,23 @@ $(document).ready(function () {
     preloadimages('bgs/color-red.jpg', 'bgs/color-yellow.jpg', 'bgs/color-green.jpg', 'bgs/color-light-yellow.jpg', 'bgs/color-blue.jpg', 'bgs/color-violet.jpg', 'bgs/color-light-violet.jpg');
     /* code for color box */
     $('.color').click(function () {
+        // hide the choose-color message
+        $('.choose-color').fadeOut(100);
+        $('.choose-color-mini').fadeOut(100);
         console.log($(this)[0].id);
         newImagePath="url('bgs/"+$(this)[0].id+".jpg')";
         console.log(newImagePath);
         /* $('.launch').css({ "background-image": newImagePath }); */
         $('.fill').css({ "background-image": newImagePath });
     });
+
+    /* back-to-top */
+    if ( ($(window).height() + 100) < $(document).height() ) {
+        $('#top-link-block').removeClass('hidden').affix({
+            // how far to scroll down before link "slides" into view
+            offset: {top:100}
+        });
+    }
 
     /* front page display animations */
     $('.cool-display').delay(200).fadeIn(500);
