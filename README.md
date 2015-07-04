@@ -37,3 +37,12 @@
  - reduced left and right padding in navbar
  - increased font-size of "color can" in logo to make it visible on mobile
  - responsive "back to top" link
+
+# Flight-gohan
+![Flight-gohan](http://dragonball.wikia.com/wiki/File:Gohan_flying_to_meet_Frieza.png)
+
+###### New Services Page added and following changes are made
+- Async Ajax call to display services page 
+- Added folder views and services.html in the folder
+- Added styles for services page
+- moved footer out of main container to make it consistent among all the pages

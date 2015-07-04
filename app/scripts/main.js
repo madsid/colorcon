@@ -9,6 +9,10 @@ function preloadimages(){
 }
 $(document).ready(function () {
 
+    if (location.hash.length > 2) {
+        location.hash = "";
+    };
+
     /* Setting the box height to the window size on browser*/
     var newHeight = $(window).height() - 85;
     if($(window).width()<768){
@@ -70,6 +74,25 @@ $(document).ready(function () {
                 $(this).fadeOut();
             }
         });
+    });
+
+
+    /* href change code */
+    $(window).on('hashchange', function () {
+        var hash = window.location.hash;
+        hash = hash.replace("#", "");
+        if (hash == 'services') {
+            $('.view').html("...");
+            $('.view').load('views/services.html');
+        }
+    });
+
+
+    /* change selected in menu */
+    $('.navbar-right').click(function (event) {
+        $('.selected').removeClass('selected');
+        var _data = $(event.target).parent()[0];
+        _data.className = "selected";
     });
 
     /* smooth Scrool code */

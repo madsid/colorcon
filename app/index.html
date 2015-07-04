@@ -37,16 +37,15 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="selected"><a href="#">Home</a></li>
-                        <li><a href="#">Services</a></li>
+                        <li class="selected"><a href="/" id="home">Home</a></li>
+                        <li><a href="#services" id="services" >Services</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
         </nav>
     </header>
 
-
-    <section class="container-fluid">
+    <section class="container-fluid view">
         <section class="choose-color">
           <img src="images/choose-color.png" />
         </section>
@@ -196,6 +195,16 @@
                      <span class="glyphicon glyphicon-chevron-right"></span>
                  </a>
         </section>
+        
+        <!-- Back to top -->
+        <span id="top-link-block" class="hidden">
+            <a href="#top" class="well well-sm" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+                <i class="glyphicon glyphicon-chevron-up"></i>
+            </a>
+        </span><!-- /top-link-block -->
+    </section>
+
+    <footer class="container-fluid">
         <section class="box2 row contact">
             <div id="contact-desc">
                 <h1> Get In touch</h1>
@@ -210,16 +219,6 @@
                 </p>
             </div>
         </section>
-        <!-- Back to top -->
-        <span id="top-link-block" class="hidden">
-            <a href="#top" class="well well-sm" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
-                <i class="glyphicon glyphicon-chevron-up"></i>
-            </a>
-        </span><!-- /top-link-block -->
-    </section>
-
-    <footer>
-
     </footer>
 
         <!-- build:js(.) scripts/vendor.js -->

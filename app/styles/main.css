@@ -399,9 +399,47 @@ body {
     background-size: cover;
 }
 
+/* services box */
+.service {
+    margin-top:2%;
+}
+
+.service-box {
+    min-height:450px;
+    padding:2px 2% 20px 2%;
+    margin-bottom:30px;
+    background-color:#F1F1F1;
+    margin-right:30px;
+    font-weight:600;
+    box-shadow:3px 3px 2px 0px rgba(150,150,150,0.75);
+    -webkit-transition: background-color 0.5s, color 0.3s, box-shadow 0.2s; /* For Safari 3.1 to 6.0 */
+    transition: background-color 0.5s, color 0.3s , box-shadow 0.2s;
+}
+
+.service-box:hover, .service-box:active {
+    background-color:#E74C3C;
+    color: #FFF; /*#DEDEDE;*/
+    -webkit-transition: background-color 0.5s, color 0.3s, box-shadow 0.2s; /* For Safari 3.1 to 6.0 */
+    transition: background-color 0.5s, color 0.3s , box-shadow 0.2s;
+    box-shadow:10px 10px 3px 1px rgba(150,150,150,0.75);
+}
+
+.service-box h3 {
+    margin-top:150px;
+    text-align:center;
+}
+
+.service-box p {
+    text-align:justify;
+}
+
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
+    .service-box {
+        width:26%;
+    }
+
     .container {
         /*max-width: 730px;*/
     }
