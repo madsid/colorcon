@@ -120,9 +120,9 @@ body {
   margin-right: -160px;
   z-index:1000;
   display:inline;
-  -webkit-animation: chooseColorMini 3s ease-in-out infinite;
-  -o-animation: chooseColorMini 3s ease-in-out infinite;
-  animation: chooseColorMini 3s ease-in-out infinite;
+  -webkit-animation: chooseColorMini 5s ease-in-out infinite;
+  -o-animation: chooseColorMini 5s ease-in-out infinite;
+  animation: chooseColorMini 5s ease-in-out infinite;
 }
 
 /* Animation */
@@ -130,18 +130,21 @@ body {
 @-webkit-keyframes chooseColorMini {
   0% {opacity:0;}
   50% {opacity:1;}
+  75% {opacity:1;}
   100% {opacity:0;}
 }
 /* Microsoft */
 @-ms-keyframes chooseColorMini {
   0% {opacity:0;}
   50% {opacity:1;}
+  75% {opacity:1;}
   100% {opacity:0;}
 }
 /* Standard syntax */
 @keyframes chooseColorMini {
     0% {opacity:0;}
     50% {opacity:1;}
+    75% {opacity:1;}
     100% {opacity:0;}
 }
 .color-box {
@@ -203,8 +206,8 @@ body {
   bottom: 60px;
   left: 50%;
   z-index: 15;
-  width: 80%;
-  max-width: 230px;
+  width: auto;
+  min-width: 260px;
   margin-left: 0px;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -227,7 +230,8 @@ body {
   display: inline-block;
   width:auto;
   height:auto;
-  padding: 5px 10px;
+  padding: 5px 2px;
+  font-size: 90%;
   margin: 1px;
   cursor: pointer;
   text-indent: 0px;
@@ -526,7 +530,12 @@ body {
     }
     /* launch */
     .launch .carousel-indicators {
+      padding: 0 10px;
       bottom: 30px;
+    }
+    .launch .carousel-indicators li{
+      padding: 5px 10px;
+      font-size: 100%;
     }
 
     .launch .carousel-caption{

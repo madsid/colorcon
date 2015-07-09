@@ -39,10 +39,21 @@
  - responsive "back to top" link
 
 # Flight-gohan
-![Flight-gohan](http://dragonball.wikia.com/wiki/File:Gohan_flying_to_meet_Frieza.png)
+![Flight-gohan](http://vignette3.wikia.nocookie.net/dragonball/images/0/0f/GohanFlyingFriezaEarth.png/revision/latest/scale-to-width-down/180?cb=20100504181055)
 
 ###### New Services Page added and following changes are made
-- Async Ajax call to display services page 
+- Async Ajax call to display services page
 - Added folder views and services.html in the folder
 - Added styles for services page
 - moved footer out of main container to make it consistent among all the pages
+
+# hyperbolic-time-chamber-gohan
+![hyperbolic-time-chamber-gohan](http://vignette2.wikia.nocookie.net/dragonball/images/c/c7/Gohan222.jpg/revision/latest/scale-to-width-down/180?cb=20100710070205)
+
+###### Slide show and other changes suggested by Arjun Singh
+
+- Added 4 rooms with 7 colors in slider
+- Added new entry in menu and adjusted width
+- Added Cool Caption - "Coloring the Canvas of Life"
+- Slowed down the "choose-color" animation in mobiles
+- Faster "back-to-top" animation with "hand" instead of "chevron"

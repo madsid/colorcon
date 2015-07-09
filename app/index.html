@@ -78,33 +78,41 @@
 
         <section id="myCarousel" class="carousel slide row box launch">
                 <!-- Indicators -->
-                <ol class="carousel-indicators">
+                <ol class="carousel-indicators room-changer">
                     <li data-target="#myCarousel" data-slide-to="0" class="active">Hall</li>
-                    <li data-target="#myCarousel" data-slide-to="1">Bedroom</li>
-                    <li data-target="#myCarousel" data-slide-to="2">Kitchen</li>
+                    <li data-target="#myCarousel" data-slide-to="1">Living-Room</li>
+                    <li data-target="#myCarousel" data-slide-to="2">Bedroom</li>
+                    <li data-target="#myCarousel" data-slide-to="3">Kitchen</li>
                 </ol>
 
                 <!-- Wrapper for Slides -->
                 <div class="carousel-inner">
                     <div class="item active">
                         <!-- Set the first background image using inline CSS below. -->
-                        <div class="fill" style="background-image:url('bgs/color-red.jpg');"></div>
+                        <div class="fill room-hall" style="background-image:url('bgs/hall/color-red.jpg');"></div>
                         <div class="carousel-caption">
-                            <h2>Cool Caption 1</h2>
+                            <h2>Coloring the Canvas of Life</h2>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <!-- Set the first background image using inline CSS below. -->
+                        <div class="fill room-living-room" style="background-image:url('bgs/living-room/color-yellow.jpg');"></div>
+                        <div class="carousel-caption">
+                            <h2>Coloring the Canvas of Life</h2>
                         </div>
                     </div>
                     <div class="item">
                         <!-- Set the second background image using inline CSS below. -->
-                        <div class="fill" style="background-image:url('bgs/color-green.jpg');"></div>
+                        <div class="fill room-bedroom" style="background-image:url('bgs/bedroom/color-green.jpg');"></div>
                         <div class="carousel-caption">
-                            <h2>Cool Caption 2</h2>
+                            <h2>Coloring the Canvas of Life</h2>
                         </div>
                     </div>
                     <div class="item">
                         <!-- Set the third background image using inline CSS below. -->
-                        <div class="fill" style="background-image:url('bgs/color-light-violet.jpg');"></div>
+                        <div class="fill room-kitchen" style="background-image:url('bgs/kitchen/color-blue.jpg');"></div>
                         <div class="carousel-caption">
-                            <h2>Cool Caption 3</h2>
+                            <h2>Coloring the Canvas of Life</h2>
                         </div>
                     </div>
                 </div>
@@ -195,11 +203,11 @@
                      <span class="glyphicon glyphicon-chevron-right"></span>
                  </a>
         </section>
-        
+
         <!-- Back to top -->
         <span id="top-link-block" class="hidden">
-            <a href="#top" class="well well-sm" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
-                <i class="glyphicon glyphicon-chevron-up"></i>
+            <a href="#top" class="well well-sm" onclick="$('html,body').animate({scrollTop:0},'fast');return false;">
+                <i class="glyphicon glyphicon-hand-up"></i>
             </a>
         </span><!-- /top-link-block -->
     </section>
