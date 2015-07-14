@@ -122,14 +122,14 @@ $(document).ready(function () {
         hash = hash.replace("#", "");
         if (hash == 'services') {
             $('.view').html("...");
-            //$('.view').load('views/services.html');
-            $.get("views/services.html", function (data) {
+            $('.view').load('views/services.html');
+            /*$.get("views/services.html", function (data) {
                 $('.view').html(data);
-            });
+            });*/
         }
     });
 
-   
+
 
     /* change selected in menu */
     $('.navbar-right').click(function (event) {
@@ -193,7 +193,7 @@ $(document).ready(function () {
         });
     }
 
-    
+
     // Create cross browser requestAnimationFrame method:
     window.requestAnimationFrame = window.requestAnimationFrame
      || window.mozRequestAnimationFrame
@@ -201,14 +201,14 @@ $(document).ready(function () {
      || window.msRequestAnimationFrame
      || function (f) { setTimeout(f, 1000 / 60) }
 
-   
+
 
     function parallaxbubbles() {
         var slide1 = document.getElementById('slide-1-text');
         var slide3 = document.getElementById('slide-3-text');
         var slide5 = document.getElementById('slide-5-text');
 
-        var scrolltop = window.pageYOffset // get number of pixels document has scrolled vertically 
+        var scrolltop = window.pageYOffset // get number of pixels document has scrolled vertically
 
         if (slide1 != null) {
             slide1.style.top = scrolltop * 0.6 + 'px';

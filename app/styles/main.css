@@ -411,8 +411,10 @@ body {
    display:block;
 }
 
-#slide-1, #slide-2, #slide-3, #slide-4, #slide-5 {
-    min-height:500px;
+
+/* Temporary */
+#slide-4{
+  background: #f8f8f8;
 }
 
 .parllax-content {
@@ -423,7 +425,7 @@ body {
 }
 
 #slide-1 p , #slide-2 p , #slide-3 p , #slide-4 p , #slide-5 p {
-    font-size:180%;
+    font-size:100%;
     font-weight:400;
     text-align:justify;
     position:relative;
@@ -448,7 +450,7 @@ body {
 }
 
 #slide-4 {
-    
+
 }
 
 #slide-5 {
@@ -460,7 +462,7 @@ body {
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-    
+
     .container {
         /*max-width: 730px;*/
     }
@@ -468,10 +470,6 @@ body {
     .box {
         padding-left:150px;
         padding-right:150px;
-        border: 5px #F8F8F8 solid;
-        -webkit-box-shadow: 0px 0px 5px #000;
-        box-shadow: 0px 0px 5px #000;
-        margin: 15px 0px;
     }
     /*.about {
         margin: 0px 0px;
@@ -556,6 +554,12 @@ body {
         margin-bottom: 30px;
     }
     /* launch */
+    .launch{
+      border: 5px #F8F8F8 solid;
+      -webkit-box-shadow: 0px 0px 5px #000;
+      box-shadow: 0px 0px 5px #000;
+      margin: 15px 0px;
+    }
     .launch .carousel-indicators {
       padding: 0 10px;
       bottom: 15px;
@@ -574,5 +578,11 @@ body {
     .testimonials-desc h1 {
         padding: 0% 10% 2% 10%;
         font-size:210%;
+    }
+    #slide-1 p , #slide-2 p , #slide-3 p , #slide-4 p , #slide-5 p {
+      font-size: 180%;
+    }
+    #slide-1, #slide-2, #slide-3, #slide-4, #slide-5 {
+        min-height:500px;
     }
 }

@@ -81,3 +81,14 @@
 ![super-saiyan-gohan](http://vignette2.wikia.nocookie.net/dragonball/images/1/12/FPSSJGohanNewOutfit.png/revision/latest/scale-to-width-down/160?cb=20110804202048)
 
 - resolved readme conflicts merged both piccolo-gohans
+
+# training-super-saiyan-gohan
+![training-super-saiyan-gohan](http://vignette2.wikia.nocookie.net/dragonball/images/e/e4/GohanSuperSaiyanMad-1.jpg/revision/latest/scale-to-width-down/180?cb=20110331064457)
+
+###### minor changes before deployment
+
+ - fixed bg issues on front page
+ - temporarily fixed bg issues on services page for "Wall Putty and Water Proofing"
+ - fixed service mobile font-size
+ - added link to logo
+ - temporarily reverted back to view.load instead of .html as its causing issues after grunt build
