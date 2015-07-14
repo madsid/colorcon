@@ -58,7 +58,17 @@
 - Slowed down the "choose-color" animation in mobiles
 - Faster "back-to-top" animation with "hand" instead of "chevron"
 
-#new
+# Piccolo-Gohan
+![Picalo-Gohan](http://vignette3.wikia.nocookie.net/dragonball/images/9/9e/011-01.jpg/revision/latest?cb=20110626231428)
+
+###### Services Page Updated but not completed
+
+- Removed cards layout
+- Added Parllalx Scrolling to services
+- Ajax call changed from $().load() to $().html(data) for effecient Dom Parsing
+- scrolling text function must be modified
+
+# piccolo-gohan-ii
 
 - fixed Homepage link
 - fixed "click-to-change-color" animation on desktop
@@ -66,3 +76,8 @@
 - change color-box based on current room
   - moved colorbox images to "bgs" folder to prevent hashing and rename
   - changing colorbox images using javascript
+
+# super-saiyan-gohan
+![super-saiyan-gohan](http://vignette2.wikia.nocookie.net/dragonball/images/1/12/FPSSJGohanNewOutfit.png/revision/latest/scale-to-width-down/160?cb=20110804202048)
+
+- resolved readme conflicts merged both piccolo-gohans
