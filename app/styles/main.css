@@ -85,7 +85,7 @@ a.well :hover{
 /* Website styles */
 body {
    outline:none;
-   background-color:#FFF;
+   background: #FFF url('../images/bg.jpg');
    font-family: 'Open Sans', sans-serif;
 }
 
@@ -257,7 +257,7 @@ body {
 }
 
 .launch .carousel-caption h2{
-  font-size: 150%;
+  font-size: 125%;
 }
 
 .about {
@@ -451,7 +451,14 @@ body {
     .box {
         padding-left:150px;
         padding-right:150px;
+        border: 5px #F8F8F8 solid;
+        -webkit-box-shadow: 0px 0px 5px #000;
+        box-shadow: 0px 0px 5px #000;
+        margin: 15px 0px;
     }
+    /*.about {
+        margin: 0px 0px;
+    }*/
     .well::after {
         content: "Back to Top";
         font-size: 80%;
@@ -470,7 +477,7 @@ body {
     }
     .choose-color{
       position:absolute;
-      bottom:100px;
+      bottom:110px;
       width:230px;
       height:35px;
       right:70px;
@@ -478,31 +485,34 @@ body {
       z-index:1000;
       display:inline;
       opacity:0;
-      -webkit-animation: chooseColor 3s ease-in-out infinite;
-      -o-animation: chooseColor 3s ease-in-out infinite;
-      animation: chooseColor 3s ease-in-out infinite;
+      -webkit-animation: chooseColor 5s ease-in-out infinite;
+      -o-animation: chooseColor 5s ease-in-out infinite;
+      animation: chooseColor 5s ease-in-out infinite;
     }
     /* Animation */
     /* Chrome, Safari, Opera */
     @-webkit-keyframes chooseColor {
-      0% {opacity:0; bottom:100px;}
-      50% {opacity:1; bottom:94px;}
-      100% {opacity:0; bottom:100px;}
+      0% {opacity:0; bottom:110px;}
+      50% {opacity:1; bottom:104px;}
+      75% {opacity:1; bottom:104px;}
+      100% {opacity:0; bottom:110px;}
     }
     /* Microsoft */
     @-ms-keyframes chooseColor {
-      0% {opacity:0; bottom:100px;}
-      50% {opacity:1; bottom:94px;}
-      100% {opacity:0; bottom:100px;}
+      0% {opacity:0; bottom:110px;}
+      50% {opacity:1; bottom:104px;}
+      75% {opacity:1; bottom:104px;}
+      100% {opacity:0; bottom:110px;}
     }
     /* Standard syntax */
     @keyframes chooseColor {
-        0% {opacity:0; bottom:100px;}
-        50% {opacity:1; bottom:94px;}
-        100% {opacity:0; bottom:100px;}
+        0% {opacity:0; bottom:110px;}
+        50% {opacity:1; bottom:104px;}
+        75% {opacity:1; bottom:104px;}
+        100% {opacity:0; bottom:110px;}
     }
     .color-box {
-        bottom:30px;
+        bottom:40px;
         right:40px;
         width:300px;
         height:45px;
@@ -531,7 +541,7 @@ body {
     /* launch */
     .launch .carousel-indicators {
       padding: 0 10px;
-      bottom: 30px;
+      bottom: 15px;
     }
     .launch .carousel-indicators li{
       padding: 5px 10px;
@@ -539,7 +549,8 @@ body {
     }
 
     .launch .carousel-caption{
-      bottom: 50px;
+      bottom: 35px;
+      font-size: 150%;
     }
 
     /* Testimonials */

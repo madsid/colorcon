@@ -57,3 +57,12 @@
 - Added Cool Caption - "Coloring the Canvas of Life"
 - Slowed down the "choose-color" animation in mobiles
 - Faster "back-to-top" animation with "hand" instead of "chevron"
+
+#new
+
+- fixed Homepage link
+- fixed "click-to-change-color" animation on desktop
+- added border and margin to slide
+- change color-box based on current room
+  - moved colorbox images to "bgs" folder to prevent hashing and rename
+  - changing colorbox images using javascript

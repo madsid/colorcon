@@ -16,7 +16,7 @@ $(document).ready(function () {
     };
 
     /* Setting the box height to the window size on browser*/
-    var newHeight = $(window).height() - 85;
+    var newHeight = $(window).height() - 115;
     if($(window).width()<768){
       newHeight =$(window).height() - 50;
     }
@@ -25,7 +25,7 @@ $(document).ready(function () {
 
     /* All events that must happen if window resizes */
     $(window).resize(function () {
-       newHeight =$(window).height() - 85;
+       newHeight =$(window).height() - 115;
        if($(window).width()<768){
          newHeight =$(window).height() - 50;
        }
@@ -33,6 +33,7 @@ $(document).ready(function () {
     });
 
     preloadimages('bgs/hall/color-red.jpg', 'bgs/hall/color-yellow.jpg', 'bgs/hall/color-green.jpg', 'bgs/hall/color-light-yellow.jpg', 'bgs/hall/color-blue.jpg', 'bgs/hall/color-violet.jpg', 'bgs/hall/color-light-violet.jpg', 'bgs/living-room/color-red.jpg', 'bgs/living-room/color-yellow.jpg', 'bgs/living-room/color-green.jpg', 'bgs/living-room/color-light-yellow.jpg', 'bgs/living-room/color-blue.jpg', 'bgs/living-room/color-violet.jpg', 'bgs/living-room/color-light-violet.jpg','bgs/bedroom/color-red.jpg', 'bgs/bedroom/color-yellow.jpg', 'bgs/bedroom/color-green.jpg', 'bgs/bedroom/color-light-yellow.jpg', 'bgs/bedroom/color-blue.jpg', 'bgs/bedroom/color-violet.jpg', 'bgs/bedroom/color-light-violet.jpg', 'bgs/kitchen/color-red.jpg', 'bgs/kitchen/color-yellow.jpg', 'bgs/kitchen/color-green.jpg', 'bgs/kitchen/color-light-yellow.jpg', 'bgs/kitchen/color-blue.jpg', 'bgs/kitchen/color-violet.jpg', 'bgs/kitchen/color-light-violet.jpg');
+
     /* code for room changer */
     $('.room-changer li').click(function(){
       //change currentRoom variable
@@ -42,6 +43,31 @@ $(document).ready(function () {
       newImagePath="url('bgs/"+currentRoom+"/"+sevenColors[Math.floor(Math.random()*sevenColors.length)]+".jpg')";
       console.log(newImagePath);
       $('.room-'+currentRoom).css({ "background-image": newImagePath });
+      //custom-change palette based on room
+      if((currentRoom=="living-room")||(currentRoom=="bedroom")||(currentRoom=="kitchen")){
+        $('#color-red img').attr("src","bgs/colorbox/red-light.png");
+        $('#color-blue img').attr("src","bgs/colorbox/blue-light.png");
+        $('#color-green img').attr("src","bgs/colorbox/green-light.png");
+        $('#color-yellow img').attr("src","bgs/colorbox/yellow-light.png");
+        $('#color-violet img').attr("src","bgs/colorbox/violet-light.png");
+        $('#color-light-violet img').attr("src","bgs/colorbox/light-violet-light.png");
+        if(currentRoom=="kitchen"){
+          $('#color-light-yellow img').attr("src","bgs/colorbox/light-yellow-light.png");
+        }
+        else{
+          $('#color-light-yellow img').attr("src","bgs/colorbox/light-yellow.png");
+        }
+      }
+      else{
+        //defaults
+        $('#color-red img').attr("src","bgs/colorbox/red.png");
+        $('#color-blue img').attr("src","bgs/colorbox/blue.png");
+        $('#color-green img').attr("src","bgs/colorbox/green.png");
+        $('#color-yellow img').attr("src","bgs/colorbox/yellow.png");
+        $('#color-light-yellow img').attr("src","bgs/colorbox/light-yellow.png");
+        $('#color-violet img').attr("src","bgs/colorbox/violet.png");
+        $('#color-light-violet img').attr("src","bgs/colorbox/light-violet.png");
+      }
     });
 
     /* code for color box */
