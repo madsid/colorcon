@@ -57,3 +57,13 @@
 - Added Cool Caption - "Coloring the Canvas of Life"
 - Slowed down the "choose-color" animation in mobiles
 - Faster "back-to-top" animation with "hand" instead of "chevron"
+
+#Piccolo-Gohan	
+![Picalo-Gohan](http://vignette3.wikia.nocookie.net/dragonball/images/9/9e/011-01.jpg/revision/latest?cb=20110626231428)
+
+###### Services Page Updated but not completed
+
+- Removed cards layout 
+- Added Parllalx Scrolling to services 
+- Ajax call changed from $().load() to $().html(data) for effecient Dom Parsing 
+- scrolling text function must be modified 

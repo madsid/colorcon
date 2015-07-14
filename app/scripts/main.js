@@ -96,10 +96,14 @@ $(document).ready(function () {
         hash = hash.replace("#", "");
         if (hash == 'services') {
             $('.view').html("...");
-            $('.view').load('views/services.html');
+            //$('.view').load('views/services.html');
+            $.get("views/services.html", function (data) {
+                $('.view').html(data);
+            });
         }
     });
 
+   
 
     /* change selected in menu */
     $('.navbar-right').click(function (event) {
@@ -152,8 +156,8 @@ $(document).ready(function () {
     }
 
     function handle(delta) {
-        var time = 350; // delay time
-        var distance = 120; // delta point
+        var time = 250; // delay time
+        var distance = 220; // delta point
         // Dom where it will apply
         $('html, body').stop().animate({
             scrollTop: $(window).scrollTop() - (distance * delta)
@@ -163,6 +167,30 @@ $(document).ready(function () {
         });
     }
 
+    
+    // Create cross browser requestAnimationFrame method:
+    window.requestAnimationFrame = window.requestAnimationFrame
+     || window.mozRequestAnimationFrame
+     || window.webkitRequestAnimationFrame
+     || window.msRequestAnimationFrame
+     || function (f) { setTimeout(f, 1000 / 60) }
 
+   
+
+    function parallaxbubbles() {
+        var slide1 = document.getElementById('slide-1-text');
+        var slide3 = document.getElementById('slide-3-text');
+        var slide5 = document.getElementById('slide-5-text');
+
+        var scrolltop = window.pageYOffset // get number of pixels document has scrolled vertically 
+
+        if (slide1 != null) {
+            slide1.style.top = scrolltop * 0.6 + 'px';
+        }
+    }
+
+    window.addEventListener('scroll', function () { // on page scroll
+        requestAnimationFrame(parallaxbubbles) // call parallaxbubbles() on next available screen paint
+    }, false)
 
 });
