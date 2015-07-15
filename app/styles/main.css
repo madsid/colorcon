@@ -411,6 +411,15 @@ body {
    display:block;
 }
 
+.slide-1-bg-remove{
+  background: url('../images/ServiceSlides/slide1.jpg') 50% 0 no-repeat fixed;
+  height: 500px;
+  margin: 0 auto;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
 
 /* Temporary */
 #slide-4{
@@ -418,10 +427,27 @@ body {
 }
 
 .parllax-content {
-    width: 100%;
     height: 100%;
-    z-index: -1;
-    padding: 8% 15%;
+    z-index: 300;
+    padding: 6% 15%;
+}
+
+.parllax-content h1{
+    padding:8px 10px;
+    background-color:#E74C3C;
+    color:#FFF;
+}
+
+.left {
+    float:left;
+}
+
+.right{
+    float:right;
+}
+
+#slide-1 , #slide-2 , #slide-3 , #slide-4 , #slide-5 {
+    min-height:300px;
 }
 
 #slide-1 p , #slide-2 p , #slide-3 p , #slide-4 p , #slide-5 p {
@@ -429,10 +455,11 @@ body {
     font-weight:400;
     text-align:justify;
     position:relative;
+    float:left;
 }
 
-#slide-1 {
-    background:url('../images/ServiceSlides/slide1.jpg') 5% 50% no-repeat;
+#slide-1{
+    background:url('../images/ServiceSlides/slide1.jpg') 10% no-repeat fixed;
     z-index: -1;
     color:#FFF;
     position:relative;
@@ -444,9 +471,9 @@ body {
 }
 
 #slide-3 {
-    background:url('../images/ServiceSlides/slide5.jpg') 95% 90% no-repeat;
+    background:url('../images/ServiceSlides/slide5.jpg') 95% 90% no-repeat fixed;
     z-index: -1;
-     color:#FFF;
+    color:#FFF;
 }
 
 #slide-4 {
@@ -459,10 +486,74 @@ body {
     color:#FFF;
 }
 
+.service-menu{
+    background-color:#EFEFEF;
+    padding:1% 10%;
+    position:fixed;
+    width:100%;
+    z-index:999;
+    display:none;
+    opacity: 0.85;
+    filter: alpha(opacity=85); /* For IE8 and earlier */
+}
+
+    .service-menu a {
+        font-weight:bold;
+        text-transform:uppercase;
+        padding:1px 6px;
+        font-size:116%;
+    }
+
+        .service-menu a::after {
+            padding-left:10px;
+            content:"/";
+        }
+
+        .service-menu a:last-child::after {
+            padding-left:10px;
+            content:"";
+        }
+
+
+        .service-menu a:hover {
+            color:#E74C3C;
+            transition:all ease-in-out 0.06s;
+        }
+
+.team {
+   width:100%;
+   padding:0;
+   margin:0;
+   display:block;
+}
+
+.team .row {
+    background-color:#FFF;  
+    padding: 4% 15%;  
+    font-size:140%;
+}
+
+.team h1{
+    text-align:center;
+    color:#E74C3C;
+    padding:5px 0;
+    font-weight:bolder;
+    font-size:270%;
+    text-transform:uppercase;
+    text-decoration:underline;
+}
+
+.team .row p {
+    text-align:justify;
+}
+
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
 
+    .service-menu {
+        display:block;
+    }
     .container {
         /*max-width: 730px;*/
     }

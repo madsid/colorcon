@@ -92,3 +92,14 @@
  - fixed service mobile font-size
  - added link to logo
  - temporarily reverted back to view.load instead of .html as its causing issues after grunt build
+
+# Monkey-Boy-Gohan
+![Monkey-Boy-Gohan](http://fc05.deviantart.net/fs13/f/2007/082/7/b/Son_Gohan_is_happy____by_DjSamerA.jpg)
+
+###### changes in services page
+
+- scrolling experience made better 
+- Parllalax improved no-js only CSS 
+- Highlights for Sub Heading
+- Added sub menu for services page (Hidden for Mobile)
+- Added text for team (Not Completed Yet)

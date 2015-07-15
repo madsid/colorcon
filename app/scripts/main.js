@@ -182,8 +182,8 @@ $(document).ready(function () {
     }
 
     function handle(delta) {
-        var time = 250; // delay time
-        var distance = 220; // delta point
+        var time = 300; // delay time
+        var distance = 200; // delta point
         // Dom where it will apply
         $('html, body').stop().animate({
             scrollTop: $(window).scrollTop() - (distance * delta)
@@ -193,30 +193,33 @@ $(document).ready(function () {
         });
     }
 
-
-    // Create cross browser requestAnimationFrame method:
-    window.requestAnimationFrame = window.requestAnimationFrame
-     || window.mozRequestAnimationFrame
-     || window.webkitRequestAnimationFrame
-     || window.msRequestAnimationFrame
-     || function (f) { setTimeout(f, 1000 / 60) }
-
-
-
-    function parallaxbubbles() {
-        var slide1 = document.getElementById('slide-1-text');
-        var slide3 = document.getElementById('slide-3-text');
-        var slide5 = document.getElementById('slide-5-text');
-
-        var scrolltop = window.pageYOffset // get number of pixels document has scrolled vertically
-
-        if (slide1 != null) {
-            slide1.style.top = scrolltop * 0.6 + 'px';
+    $(window).scroll(function (event) {
+        var servicemenu = $('.service-menu');
+        if (servicemenu != null && servicemenu.offset()) {
+            var top = servicemenu.offset().top;
+       
+            if (top < 80 && $(document).scrollTop() < 100) {
+                servicemenu.animate({ "top": "84px" }, 100);
+            }
+            //else if (top > ($(document).scrollTop() - servicemenu.height())) {
+            else if ($(document).scrollTop() > servicemenu.height()) {
+                servicemenu.css("top", "0px");
+            }
         }
-    }
+    });
 
-    window.addEventListener('scroll', function () { // on page scroll
-        requestAnimationFrame(parallaxbubbles) // call parallaxbubbles() on next available screen paint
-    }, false)
+    /*
 
+    var lastScrollTop = 0;
+    $(window).scroll(function (event) {
+        var st = $(this).scrollTop();
+        var slide1 = document.getElementById('slide-1');
+        if (st > lastScrollTop) {
+          
+        } else {
+            
+        }
+        lastScrollTop = st;
+    });
+    */
 });
