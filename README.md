@@ -103,3 +103,12 @@
 - Highlights for Sub Heading
 - Added sub menu for services page (Hidden for Mobile)
 - Added text for team (Not Completed Yet)
+
+# Monkey-Boy-Gohan-hotfix
+![Monkey-Boy-Gohan](http://fc05.deviantart.net/fs13/f/2007/082/7/b/Son_Gohan_is_happy____by_DjSamerA.jpg)
+
+###### Additions in services page and sliders fix
+
+- Bootstrap slider problems fix 
+- Added team details in services page 
+- minor changes

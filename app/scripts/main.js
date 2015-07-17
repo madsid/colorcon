@@ -93,7 +93,7 @@ $(document).ready(function () {
     /* front page display animations */
     $('.cool-display').delay(200).fadeIn(500);
 
-    /* Display on scroll animation */
+    /* Display on scroll animation 
     $(document).scroll(function () {
         //Show element after user scrolls 800px
         var y = $(this).scrollTop();
@@ -105,16 +105,9 @@ $(document).ready(function () {
 
         // Show element after user scrolls past
         // the top edge of its parent
-        $('.anim').each(function () {
-            var t = $(this).parent().offset().top - 60;
-            if (y > t) {
-                $(this).fadeIn();
-            } else {
-                $(this).fadeOut();
-            }
-        });
+       
     });
-
+    */
 
     /* href change code */
     $(window).on('hashchange', function () {
@@ -122,7 +115,9 @@ $(document).ready(function () {
         hash = hash.replace("#", "");
         if (hash == 'services') {
             $('.view').html("...");
-            $('.view').load('views/services.html');
+            $('.view').load('views/services.html', function () {
+                
+            });
             /*$.get("views/services.html", function (data) {
                 $('.view').html(data);
             });*/
@@ -206,8 +201,27 @@ $(document).ready(function () {
                 servicemenu.css("top", "0px");
             }
         }
+
+        $('.anim').each(function () {
+            var t = $(this).parent().offset().top - 60;
+            if (y > t) {
+                $(this).fadeIn();
+            } else {
+                $(this).fadeOut();
+            }
+        });
     });
 
+    
+    $('.view').on('click', '.about-img', function (elem) {
+        $('.team-desc').find('div').each(function () { console.log($(this)[0].style.visibility = 'hidden'); });
+        switch (elem.target.id) {
+            case "people-1": $('#team-desc-1')[0].style.visibility = 'visible'; break;
+            case "people-2": $('#team-desc-2')[0].style.visibility = 'visible'; break;
+            case "people-3": $('#team-desc-3')[0].style.visibility = 'visible'; break;
+            default: break;
+        }
+    });
     /*
 
     var lastScrollTop = 0;
