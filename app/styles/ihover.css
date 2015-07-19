@@ -23,14 +23,14 @@
 
 .ih-item.circle {
   position: relative;
-  width: 60px;
-  height: 60px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
 }
 .ih-item.circle .img {
   position: relative;
-  width: 60px;
-  height: 60px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
 }
 .ih-item.circle .img:before {
@@ -695,11 +695,11 @@
   text-transform: uppercase;
   position: relative;
   letter-spacing: 2px;
-  font-size: 12px;
+  font-size: 10px;
   margin: 0px;
   padding: 0;
   height: 110px;
-  line-height: 55px;
+  line-height: 40px;
   text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 .ih-item.circle.effect6 .info p {
@@ -2440,18 +2440,18 @@
 }
 
 .ih-item.circle.effect20.top_to_bottom .info .info-back {
-  -webkit-transform: translate3d(0, 0, -60px) rotate3d(1, 0, 0, 90deg);
-  -moz-transform: translate3d(0, 0, -60px) rotate3d(1, 0, 0, 90deg);
-  -ms-transform: translate3d(0, 0, -60px) rotate3d(1, 0, 0, 90deg);
-  -o-transform: translate3d(0, 0, -60px) rotate3d(1, 0, 0, 90deg);
-  transform: translate3d(0, 0, -60px) rotate3d(1, 0, 0, 90deg);
+  -webkit-transform: translate3d(0, 0, -45px) rotate3d(1, 0, 0, 90deg);
+  -moz-transform: translate3d(0, 0, -45px) rotate3d(1, 0, 0, 90deg);
+  -ms-transform: translate3d(0, 0, -45px) rotate3d(1, 0, 0, 90deg);
+  -o-transform: translate3d(0, 0, -45px) rotate3d(1, 0, 0, 90deg);
+  transform: translate3d(0, 0, -45px) rotate3d(1, 0, 0, 90deg);
 }
 .ih-item.circle.effect20.top_to_bottom a:hover .img {
-  -webkit-transform: translate3d(0, 90px, 0) rotate3d(1, 0, 0, -90deg);
-  -moz-transform: translate3d(0, 90px, 0) rotate3d(1, 0, 0, -90deg);
-  -ms-transform: translate3d(0, 90px, 0) rotate3d(1, 0, 0, -90deg);
-  -o-transform: translate3d(0, 90px, 0) rotate3d(1, 0, 0, -90deg);
-  transform: translate3d(0, 90px, 0) rotate3d(1, 0, 0, -90deg);
+  -webkit-transform: translate3d(0, 75px, 0) rotate3d(1, 0, 0, -90deg);
+  -moz-transform: translate3d(0, 75px, 0) rotate3d(1, 0, 0, -90deg);
+  -ms-transform: translate3d(0, 75px, 0) rotate3d(1, 0, 0, -90deg);
+  -o-transform: translate3d(0, 75px, 0) rotate3d(1, 0, 0, -90deg);
+  transform: translate3d(0, 75px, 0) rotate3d(1, 0, 0, -90deg);
 }
 .ih-item.circle.effect20.top_to_bottom a:hover .info .info-back {
   -webkit-transform: rotate3d(1, 0, 0, 0deg);
@@ -2462,18 +2462,18 @@
 }
 
 .ih-item.circle.effect20.bottom_to_top .info .info-back {
-  -webkit-transform: translate3d(0, 90px, 0) rotate3d(1, 0, 0, -90deg);
-  -moz-transform: translate3d(0, 90px, 0) rotate3d(1, 0, 0, -90deg);
-  -ms-transform: translate3d(0, 90px, 0) rotate3d(1, 0, 0, -90deg);
-  -o-transform: translate3d(0, 90px, 0) rotate3d(1, 0, 0, -90deg);
-  transform: translate3d(0, 90px, 0) rotate3d(1, 0, 0, -90deg);
+  -webkit-transform: translate3d(0, 75px, 0) rotate3d(1, 0, 0, -90deg);
+  -moz-transform: translate3d(0, 75px, 0) rotate3d(1, 0, 0, -90deg);
+  -ms-transform: translate3d(0, 75px, 0) rotate3d(1, 0, 0, -90deg);
+  -o-transform: translate3d(0, 75px, 0) rotate3d(1, 0, 0, -90deg);
+  transform: translate3d(0, 75px, 0) rotate3d(1, 0, 0, -90deg);
 }
 .ih-item.circle.effect20.bottom_to_top a:hover .img {
-  -webkit-transform: translate3d(0, 0, -60px) rotate3d(1, 0, 0, 90deg);
-  -moz-transform: translate3d(0, 0, -60px) rotate3d(1, 0, 0, 90deg);
-  -ms-transform: translate3d(0, 0, -60px) rotate3d(1, 0, 0, 90deg);
-  -o-transform: translate3d(0, 0, -60px) rotate3d(1, 0, 0, 90deg);
-  transform: translate3d(0, 0, -60px) rotate3d(1, 0, 0, 90deg);
+  -webkit-transform: translate3d(0, 0, -45px) rotate3d(1, 0, 0, 90deg);
+  -moz-transform: translate3d(0, 0, -45px) rotate3d(1, 0, 0, 90deg);
+  -ms-transform: translate3d(0, 0, -45px) rotate3d(1, 0, 0, 90deg);
+  -o-transform: translate3d(0, 0, -45px) rotate3d(1, 0, 0, 90deg);
+  transform: translate3d(0, 0, -45px) rotate3d(1, 0, 0, 90deg);
 }
 .ih-item.circle.effect20.bottom_to_top a:hover .info .info-back {
   -webkit-transform: rotate3d(1, 0, 0, 0deg);

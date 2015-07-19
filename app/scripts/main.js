@@ -118,12 +118,16 @@ $(document).ready(function () {
         if (hash == 'services') {
             $('.view').html("...");
             $('.view').load('views/services.html', function () {
-
             });
             /*$.get("views/services.html", function (data) {
-                $('.view').html(data);
+            $('.view').html(data);
             });*/
         }
+        else if (hash == 'get-a-quote') {
+            $('.view').html("...");
+            $('.view').load('views/get-a-quote.html', function () {
+            });
+          }
     });
 
 

@@ -207,6 +207,9 @@ body {
     font-weight:300;
 }
 */
+.launch{
+  overflow-x: hidden;
+}
 .launch .carousel-indicators {
   position: absolute;
   bottom: 60px;
@@ -310,6 +313,12 @@ body {
     font-size:115%;
     color:#666;
 }
+.testimonials-desc h1.testimonials-long{
+  margin-top: 20px; font-size: 100%;
+}
+.testimonials-desc h3.testimonials-long{
+  font-size:90%;
+}
 .testimonials-desc h3 {
     font-weight:400;
     margin: auto;
@@ -348,7 +357,7 @@ body {
     margin: auto;
     text-align:center;
     text-transform:uppercase;
-    padding: 10px 0px;
+    padding: 25px 0px 10px 0px;
 }
 
 #contact-desc p {
@@ -375,6 +384,14 @@ body {
 p#contact-citrus{
   text-align:right;
   margin-bottom: -10px;
+}
+#contact-top-border{
+  width:100%;
+  height:20px;
+  background: url('../images/border.jpg');
+  background-size: contain;
+  position: absolute;
+  left:0;
 }
 /* Everything gets side spacing for mobile first views */
 .header,
@@ -557,26 +574,23 @@ p#contact-citrus{
    display:block;
 }
 
-.team .row {
+.team .row{
     background-color:#FFF;
-    padding: 4% 10%;
-    font-size:140%;
+    padding: 4% 15%;
+    text-align: left;
 }
 
 .team h1{
-    text-align:center;
-    color:#E74C3C;
-    padding-bottom:5%;
-    font-weight:600;
-    font-size:270%;
-    text-transform:uppercase;
-    text-decoration:underline;
+  font-weight:bold;
+  margin: auto;
+  text-align:center;
+  text-transform:uppercase;
+  padding-bottom: 2%;
 }
 
-.team .row p {
-    text-align:justify;
-    font-weight:300;
-    font-size: 88%;
+.row.team p{
+    font-size: 103%;
+    line-height: inherit;
 }
 
 .team .about-img img {
@@ -590,17 +604,24 @@ p#contact-citrus{
     cursor:pointer;
 }
 
-.team .team-desc div {
-    visibility:hidden;
-    position:absolute;
-    top:0;
-    font-style:italic;
+#team-desc-1, #team-desc-2, #team-desc-3{
+    padding: 5% 0%;
+    border-top: 1px solid #ddd;
 }
-
-#team-desc-1{
-    visibility:visible;
+.team-desc p{
+  font-size: 103%;
+  text-align: left;
+  padding: 10px 0px;
 }
-
+#team-desc-1 img, #team-desc-2 img, #team-desc-3 img{
+  width: 100%;
+  max-width: 200px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
 
@@ -731,6 +752,13 @@ p#contact-citrus{
         -o-transform: translateY(-50%);
         transform: translateY(-50%);
     }
+    .testimonials-desc h1.testimonials-long{
+      margin-top: 10%;
+      font-size: 180%;
+    }
+    .testimonials-desc h3.testimonials-long{
+      font-size:125%;
+    }
     .testimonials-desc h3 {
       margin: -1% auto;
       font-size:125%;
@@ -739,7 +767,11 @@ p#contact-citrus{
       -o-transform: translateY(-100%);
       transform: translateY(-100%);
     }
-
+    /* Team */
+    .team-desc p{
+      padding: 0px 10px;
+      text-align:justify;
+    }
     /* Contact */
     #contact-desc h1 {
       font-size: 250%;

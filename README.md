@@ -128,3 +128,15 @@
 # ssj2-gohan
 ![ssj2-gohan](http://vignette4.wikia.nocookie.net/dragonball/images/f/fc/Gohan_Super_Saiyan_2.png/revision/latest/scale-to-width-down/180?cb=20120517140838)
 ###### Polished and finished front page
+
+# teen-gohan
+![ssj2-gohan](http://vignette2.wikia.nocookie.net/dragonball/images/d/db/185-33.jpg/revision/latest/scale-to-width-down/180?cb=20120517142819)
+
+- added "overflow-x: hidden" to fix issues on Microsoft Edge :grin:
+- new address in "get-in-touch"
+- reduced extra images size
+- added new testimonial (long one)
+- temporarily removed unused social icons
+- Added "the team" to front page and redesigned based on suggestions
+- Added original BG - 123rf's #41204191
+- Added brick-top-border to "Get In Touch"
