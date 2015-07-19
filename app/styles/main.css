@@ -49,6 +49,10 @@ a:focus {
     color:#FFF;
 }
 
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
 #top-link-block.affix-top {
     position: absolute; /* allows it to "slide" up into view */
     bottom: -82px;
@@ -368,7 +372,10 @@ body {
   display: inline-block;
   margin: 0px 5px;
 }
-
+p#contact-citrus{
+  text-align:right;
+  margin-bottom: -10px;
+}
 /* Everything gets side spacing for mobile first views */
 .header,
 .marketing,
@@ -733,6 +740,14 @@ body {
       transform: translateY(-100%);
     }
 
+    /* Contact */
+    #contact-desc h1 {
+      font-size: 250%;
+      padding: 0px 0px 20px 0px;
+    }
+    p#contact-citrus{
+      margin-bottom: -50px;
+    }
     #slide-1 p , #slide-2 p , #slide-3 p , #slide-4 p , #slide-5 p {
       font-size: 180%;
     }

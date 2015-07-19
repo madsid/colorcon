@@ -114,6 +114,7 @@
 - minor changes
 
 # pre-ssj2-gohan
+![pre-ssj2-gohan](http://vignette2.wikia.nocookie.net/dragonball/images/b/b7/166-42.jpg/revision/latest/scale-to-width-down/180?cb=20120529164034)
 
 - Reverted back to original palette
 - Moved caption to logo
@@ -123,3 +124,7 @@
  - New styling
  - New Icons (font-awesome from bower)
  - new extras - ihover - injection failed using bower - added required css to main.css
+
+# ssj2-gohan
+![ssj2-gohan](http://vignette4.wikia.nocookie.net/dragonball/images/f/fc/Gohan_Super_Saiyan_2.png/revision/latest/scale-to-width-down/180?cb=20120517140838)
+###### Polished and finished front page

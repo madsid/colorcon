@@ -720,6 +720,7 @@
 }
 .ih-item.circle.effect6.scale_up a:hover .img, .ih-item.circle.effect6.scale_up a:active .img {
   opacity: 0;
+  cursor: pointer;
   -webkit-transform: scale(1.5);
   -moz-transform: scale(1.5);
   -ms-transform: scale(1.5);
@@ -728,6 +729,7 @@
 }
 .ih-item.circle.effect6.scale_up a:hover .info, .ih-item.circle.effect6.scale_up a:active .info {
   opacity: 1;
+  cursor: pointer;
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
   -ms-transform: scale(1);
