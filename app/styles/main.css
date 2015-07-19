@@ -494,7 +494,7 @@ p#contact-citrus{
 }
 
 #slide-1 , #slide-2 , #slide-3 , #slide-4 , #slide-5 {
-    min-height:300px;
+    min-height:450px;
 }
 
 #slide-1 p , #slide-2 p , #slide-3 p , #slide-4 p , #slide-5 p {
@@ -506,9 +506,8 @@ p#contact-citrus{
 }
 
 #slide-1{
-    background:url('../images/ServiceSlides/slide1.jpg') 10% no-repeat fixed;
+    background:#FFF;
     z-index: -1;
-    color:#FFF;
     position:relative;
     top:0;
 }
@@ -518,19 +517,13 @@ p#contact-citrus{
 }
 
 #slide-3 {
-    background:url('../images/ServiceSlides/slide5.jpg') 95% 90% no-repeat fixed;
+    background:#FFF;
     z-index: -1;
-    color:#FFF;
-}
-
-#slide-4 {
-
 }
 
 #slide-5 {
-    background:url('../images/ServiceSlides/slide3.jpg') no-repeat fixed;
+    background:#FFF;
     background-size:cover;
-    color:#FFF;
 }
 
 .service-menu{
@@ -631,6 +624,32 @@ p#contact-citrus{
     .container {
         /*max-width: 730px;*/
     }
+
+    
+    #slide-1{
+        background:url('../images/ServiceSlides/slide1.jpg') 10% no-repeat fixed;
+        z-index: -1;
+        color:#FFF;
+        position:relative;
+        top:0;
+    }
+
+    #slide-2 {
+        background:#FFF;
+    }
+
+    #slide-3 {
+        background:url('../images/ServiceSlides/slide5.jpg') 95% 90% no-repeat fixed;
+        z-index: -1;
+        color:#FFF;
+    }
+
+    #slide-5 {
+        background:url('../images/ServiceSlides/slide3.jpg') no-repeat fixed;
+        background-size:cover;
+        color:#FFF;
+    }
+
 
     .box {
         padding-left:150px;

@@ -140,3 +140,8 @@
 - Added "the team" to front page and redesigned based on suggestions
 - Added original BG - 123rf's #41204191
 - Added brick-top-border to "Get In Touch"
+
+# Post-teen-gohan
+![ssj2-gohan](http://vignette2.wikia.nocookie.net/dragonball/images/d/db/185-33.jpg/revision/latest/scale-to-width-down/180?cb=20120517142819)
+
+- Few changes in services for better mobile experience
