@@ -7,7 +7,6 @@ author: sidhartha madipalli
 email: hello@madsid.com
 website: http://colorcan.in
 ----------------------------------------------------------*/
-
 /* Bootstrap Override styles*/
 a {
   text-decoration: none;
@@ -27,7 +26,6 @@ a:focus {
 .navbar-brand img{
     height: 100%;
 }
-
 .navbar {
     border-radius:0;
     margin-bottom:0;
@@ -81,6 +79,10 @@ a.well {
 }
 a.well :hover{
   color: #999;
+}
+.fa {
+  font-size: 150%;
+  margin-right: 10px;
 }
 /* Website styles */
 body {
@@ -294,19 +296,23 @@ body {
     font-weight: 400;
     text-align: justify;
 }
-
 .testimonials-desc h1 {
     font-weight:500;
     margin: auto;
-    text-align:center;
+    text-align:left;
     padding: 0% 12% 2% 12%;
     font-style: italic;
-    margin-top:10%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
-    font-size:125%;
+    margin-top:50px;
+    font-size:115%;
+    color:#666;
+}
+.testimonials-desc h3 {
+    font-weight:400;
+    margin: auto;
+    text-align:right;
+    padding: 0% 12%;
+    font-style: italic;
+    font-size:100%;
     color:#666;
 }
 
@@ -334,15 +340,33 @@ body {
 
 #contact-desc h1 {
     font-weight:bold;
+    font-size: 210%;
     margin: auto;
     text-align:center;
     text-transform:uppercase;
-    padding-bottom: 2%;
+    padding: 10px 0px;
 }
 
 #contact-desc p {
+    border-top: 1px solid #3f3f3f;
+    padding: 10px 10px 0px 10px;
     font-size:103%;
-    text-align:center;
+    text-align: left;
+    color : #999;
+}
+#contact-desc p a{
+    color: #bbb;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+#contact-desc p a:hover{
+    color: #888;
+}
+
+.contact-extras-item {
+  display: inline-block;
+  margin: 0px 5px;
 }
 
 /* Everything gets side spacing for mobile first views */
@@ -489,7 +513,7 @@ body {
     background-color:#EFEFEF;
     padding:1% 10%;
     position:fixed;
-    width:100%;
+    width: 100%;
     z-index:999;
     display:none;
     opacity: 0.85;
@@ -527,8 +551,8 @@ body {
 }
 
 .team .row {
-    background-color:#FFF;  
-    padding: 4% 10%;  
+    background-color:#FFF;
+    padding: 4% 10%;
     font-size:140%;
 }
 
@@ -560,7 +584,7 @@ body {
 }
 
 .team .team-desc div {
-    visibility:hidden; 
+    visibility:hidden;
     position:absolute;
     top:0;
     font-style:italic;
@@ -688,10 +712,27 @@ body {
     }
 
     /* Testimonials */
-    .testimonials-desc h1 {
-        padding: 0% 10% 2% 10%;
-        font-size:210%;
+    .testimonials {
+        max-height: 300px;
     }
+    .testimonials-desc h1 {
+        padding: 0% 10%;
+        font-size:210%;
+        margin-top: 10%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    .testimonials-desc h3 {
+      margin: -1% auto;
+      font-size:125%;
+      -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+      -o-transform: translateY(-100%);
+      transform: translateY(-100%);
+    }
+
     #slide-1 p , #slide-2 p , #slide-3 p , #slide-4 p , #slide-5 p {
       font-size: 180%;
     }

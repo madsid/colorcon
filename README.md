@@ -98,8 +98,8 @@
 
 ###### changes in services page
 
-- scrolling experience made better 
-- Parllalax improved no-js only CSS 
+- scrolling experience made better
+- Parllalax improved no-js only CSS
 - Highlights for Sub Heading
 - Added sub menu for services page (Hidden for Mobile)
 - Added text for team (Not Completed Yet)
@@ -109,6 +109,17 @@
 
 ###### Additions in services page and sliders fix
 
-- Bootstrap slider problems fix 
-- Added team details in services page 
+- Bootstrap slider problems fix
+- Added team details in services page
 - minor changes
+
+# pre-ssj2-gohan
+
+- Reverted back to original palette
+- Moved caption to logo
+- New BG with 123rf #41204191
+- modified testimonials and added h3
+- Contact us
+ - New styling
+ - New Icons (font-awesome from bower)
+ - new extras - ihover - injection failed using bower - added required css to main.css

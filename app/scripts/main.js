@@ -44,30 +44,32 @@ $(document).ready(function () {
       console.log(newImagePath);
       $('.room-'+currentRoom).css({ "background-image": newImagePath });
       //custom-change palette based on room
+      /* ====== Removing cusom palette
       if((currentRoom=="living-room")||(currentRoom=="bedroom")||(currentRoom=="kitchen")){
-        $('#color-red img').attr("src","bgs/colorbox/red-light.png");
-        $('#color-blue img').attr("src","bgs/colorbox/blue-light.png");
-        $('#color-green img').attr("src","bgs/colorbox/green-light.png");
-        $('#color-yellow img').attr("src","bgs/colorbox/yellow-light.png");
-        $('#color-violet img').attr("src","bgs/colorbox/violet-light.png");
-        $('#color-light-violet img').attr("src","bgs/colorbox/light-violet-light.png");
+        $('#color-red img').attr("src","images/colorbox/red-light.png");
+        $('#color-blue img').attr("src","images/colorbox/blue-light.png");
+        $('#color-green img').attr("src","images/colorbox/green-light.png");
+        $('#color-yellow img').attr("src","images/colorbox/yellow-light.png");
+        $('#color-violet img').attr("src","images/colorbox/violet-light.png");
+        $('#color-light-violet img').attr("src","images/colorbox/light-violet-light.png");
         if(currentRoom=="kitchen"){
-          $('#color-light-yellow img').attr("src","bgs/colorbox/light-yellow-light.png");
+          $('#color-light-yellow img').attr("src","images/colorbox/light-yellow-light.png");
         }
         else{
-          $('#color-light-yellow img').attr("src","bgs/colorbox/light-yellow.png");
+          $('#color-light-yellow img').attr("src","images/colorbox/light-yellow.png");
         }
       }
       else{
         //defaults
-        $('#color-red img').attr("src","bgs/colorbox/red.png");
-        $('#color-blue img').attr("src","bgs/colorbox/blue.png");
-        $('#color-green img').attr("src","bgs/colorbox/green.png");
-        $('#color-yellow img').attr("src","bgs/colorbox/yellow.png");
-        $('#color-light-yellow img').attr("src","bgs/colorbox/light-yellow.png");
-        $('#color-violet img').attr("src","bgs/colorbox/violet.png");
-        $('#color-light-violet img').attr("src","bgs/colorbox/light-violet.png");
+        $('#color-red img').attr("src","images/colorbox/red.png");
+        $('#color-blue img').attr("src","images/colorbox/blue.png");
+        $('#color-green img').attr("src","images/colorbox/green.png");
+        $('#color-yellow img').attr("src","images/colorbox/yellow.png");
+        $('#color-light-yellow img').attr("src","images/colorbox/light-yellow.png");
+        $('#color-violet img').attr("src","images/colorbox/violet.png");
+        $('#color-light-violet img').attr("src","images/colorbox/light-violet.png");
       }
+      =======================================================================*/
     });
 
     /* code for color box */
@@ -93,7 +95,7 @@ $(document).ready(function () {
     /* front page display animations */
     $('.cool-display').delay(200).fadeIn(500);
 
-    /* Display on scroll animation 
+    /* Display on scroll animation
     $(document).scroll(function () {
         //Show element after user scrolls 800px
         var y = $(this).scrollTop();
@@ -105,7 +107,7 @@ $(document).ready(function () {
 
         // Show element after user scrolls past
         // the top edge of its parent
-       
+
     });
     */
 
@@ -116,7 +118,7 @@ $(document).ready(function () {
         if (hash == 'services') {
             $('.view').html("...");
             $('.view').load('views/services.html', function () {
-                
+
             });
             /*$.get("views/services.html", function (data) {
                 $('.view').html(data);
@@ -192,7 +194,7 @@ $(document).ready(function () {
         var servicemenu = $('.service-menu');
         if (servicemenu != null && servicemenu.offset()) {
             var top = servicemenu.offset().top;
-       
+
             if (top < 80 && $(document).scrollTop() < 100) {
                 servicemenu.animate({ "top": "84px" }, 100);
             }
@@ -212,7 +214,7 @@ $(document).ready(function () {
         });
     });
 
-    
+
     $('.view').on('click', '.about-img', function (elem) {
         $('.team-desc').find('div').each(function () { console.log($(this)[0].style.visibility = 'hidden'); });
         switch (elem.target.id) {
@@ -229,9 +231,9 @@ $(document).ready(function () {
         var st = $(this).scrollTop();
         var slide1 = document.getElementById('slide-1');
         if (st > lastScrollTop) {
-          
+
         } else {
-            
+
         }
         lastScrollTop = st;
     });

@@ -10,10 +10,12 @@
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/ihover.css">
     <!-- endbuild -->
   </head>
   <body>
@@ -54,25 +56,25 @@
         </section>
         <section class="color-box cool-display">
           <div id="color-red" class="color">
-              <img src="bgs/colorbox/red.png" alt="color box red leaf"/>
+              <img src="images/colorbox/red.png" alt="color box red leaf"/>
           </div>
           <div id="color-yellow" class="color">
-              <img src="bgs/colorbox/yellow.png" alt="color box yellow leaf" />
+              <img src="images/colorbox/yellow.png" alt="color box yellow leaf" />
           </div>
           <div id="color-green" class="color">
-              <img src="bgs/colorbox/green.png" alt="color box green leaf" />
+              <img src="images/colorbox/green.png" alt="color box green leaf" />
           </div>
           <div id="color-light-yellow" class="color">
-              <img src="bgs/colorbox/light-yellow.png" alt="color box light yellow leaf" />
+              <img src="images/colorbox/light-yellow.png" alt="color box light yellow leaf" />
           </div>
           <div id="color-blue" class="color">
-              <img src="bgs/colorbox/blue.png" alt="color box blue leaf" />
+              <img src="images/colorbox/blue.png" alt="color box blue leaf" />
           </div>
           <div id="color-violet" class="color">
-              <img src="bgs/colorbox/violet.png" alt="color box violet leaf" />
+              <img src="images/colorbox/violet.png" alt="color box violet leaf" />
           </div>
           <div id="color-light-violet" class="color">
-              <img src="bgs/colorbox/light-violet.png" alt="color box light violet leaf" />
+              <img src="images/colorbox/light-violet.png" alt="color box light violet leaf" />
           </div>
         </section>
 
@@ -90,30 +92,21 @@
                     <div class="item active">
                         <!-- Set the first background image using inline CSS below. -->
                         <div class="fill room-hall" style="background-image:url('bgs/hall/color-red.jpg');"></div>
-                        <div class="carousel-caption">
+                        <!--<div class="carousel-caption">
                             <h2>Coloring the Canvas of Life</h2>
-                        </div>
+                        </div>-->
                     </div>
                     <div class="item">
                         <!-- Set the first background image using inline CSS below. -->
                         <div class="fill room-living-room" style="background-image:url('bgs/living-room/color-yellow.jpg');"></div>
-                        <div class="carousel-caption">
-                            <h2>Coloring the Canvas of Life</h2>
-                        </div>
                     </div>
                     <div class="item">
                         <!-- Set the second background image using inline CSS below. -->
                         <div class="fill room-bedroom" style="background-image:url('bgs/bedroom/color-green.jpg');"></div>
-                        <div class="carousel-caption">
-                            <h2>Coloring the Canvas of Life</h2>
-                        </div>
                     </div>
                     <div class="item">
                         <!-- Set the third background image using inline CSS below. -->
                         <div class="fill room-kitchen" style="background-image:url('bgs/kitchen/color-blue.jpg');"></div>
-                        <div class="carousel-caption">
-                            <h2>Coloring the Canvas of Life</h2>
-                        </div>
                     </div>
                 </div>
 
@@ -172,7 +165,8 @@
                      <div class="item active">
                          <!-- Removed fill Image -->
                          <div class="testimonials-desc">
-                           <h1>"In nec rutrum nunc. Fusce luctus, lacus ac lacinia sollicitudin, dolor mauris bibendum odio, at sodales elit eros nec nisi."</h1>
+                           <h1>"We are indeed thrilled with the work you and your team have done. The best part is that it finished well within the time framework. This was possible only because of constant supervision by your team."</h1>
+                           <h3> - Mr. and Mrs. Rao</h3>
                          </div>
                          <!-- Removed Caption -->
                      </div>
@@ -180,7 +174,8 @@
                          <!-- Removed fill Image -->
 
                          <div class="testimonials-desc">
-                           <h1>"Curabitur orci turpis, consequat ac dui ac, fringilla finibus augue. Proin ut blandit neque!"</h1>
+                           <h1>"Good to see an all round hassle free experience for painting our home. This has been a good decision to work with Color Can especially with the free consultation on colours and support right till the end."</h1>
+                           <h3> - The Sohouni's</h3>
                           </div>
                          <!-- Removed Caption -->
                      </div>
@@ -188,8 +183,8 @@
                          <!-- Removed fill Image -->
 
                          <div class="testimonials-desc">
-                          <!-- Inline CSS to reduce top padding for three lines testimonial" -->
                            <h1>"Quisque ultrices dui a leo malesuada, vel dignissim enim pretium. Quisque venenatis imperdiet dolor non tincidunt. Aenean scelerisque libero sem, id iaculis lorem suscipit non"</h1>
+                           <h3> - The Client</h3>
                          </div>
                          <!-- Removed Caption -->
                      </div>
@@ -216,14 +211,57 @@
         <section class="box2 row contact">
             <div id="contact-desc">
                 <h1> Get In touch</h1>
-                <p>
-                    COLOR CAN, First floor, Plot No. 10, SRK Colony West Marredpally Secunderabad. Telangana - 500 026
-                <p>
-                <p>
-                    9849950705/09840923276
-                    arjun@colorcan.in
-                    <a href="#" target="_blank"> www.colorcan.in </a>
-                    <a href="#" target="_blank"> www.facebook.com/colorcaninc </a>
+                <p id="contact-address">
+                    COLOR CAN, <br />
+                    First floor, Plot No. 10, <br />
+                    SRK Colony, West Marredpally, <br />
+                    Secunderabad, <br />
+                    Telangana - 500 026 <br />
+                </p>
+                <p id="contact-phone"><i class="glyphicon glyphicon-earphone"></i>&nbsp;9849950705 / 09840923276 </p>
+                <p id="contact-mail"><i class="glyphicon glyphicon-envelope"></i>&nbsp;arjun@colorcan.in </p>
+                <p id="contact-social">
+                  <a href="http://www.colorcan.in" target="_blank"><i class="fa fa-globe"></i></a>
+                  <a href="http://facebook.com/colorcaninc" target="_blank"><i class="fa fa-facebook-square"></i></a>
+                  <a href="#" target="_blank"><i class="fa fa-google-plus-square"></i></a>
+                  <a href="#" target="_blank"><i class="fa fa-twitter-square"></i></a>
+                  <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
+                  <a href="#" target="_blank"><i class="fa fa-pinterest"></i></a>
+                </p>
+                <p id="contact-extras">
+                  COLOR CAN ENSURES
+                  <!-- Scale up-->
+                      <!-- normal -->
+                    <div class="contact-extras-item">
+                      <div class="ih-item circle effect6 scale_up"><a>
+                          <div class="img"><img src="http://lorempixel.com/200/200" alt="img"></div>
+                          <div class="info">
+                            <h3>Quality</h3>
+                          </div></a></div>
+                        </div>
+                      <!-- end normal -->
+                      <!-- normal -->
+                      <div class="contact-extras-item">
+                      <div class="ih-item circle effect6 scale_up"><a>
+                          <div class="img"><img src="http://lorempixel.com/200/200" alt="img"></div>
+                          <div class="info">
+                            <h3>Safety</h3>
+                          </div></a></div>
+                        </div>
+                      <!-- end normal -->
+                      &
+                      <!-- normal -->
+                      <div class="contact-extras-item">
+                      <div class="ih-item circle effect6 scale_up"><a>
+                          <div class="img"><img src="http://lorempixel.com/200/200" alt="img"></div>
+                          <div class="info">
+                            <h3 style="line-height:14px;padding-top:10px;">a Fun Filled Experience</h3>
+                          </div></a></div>
+                        </div>
+                      <!-- end normal -->
+                    <div style="clear:both"></div>
+                    <br />
+                  <!-- end Scale up-->
                 </p>
             </div>
         </section>

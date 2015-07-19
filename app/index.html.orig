@@ -48,25 +48,25 @@
     <section class="container-fluid">
         <section class="color-box">
             <div id="color-red" class="color">
-                <img src="bgs/colorbox/red.png" alt="color box red leaf"/>
+                <img src="images/colorbox/red.png" alt="color box red leaf"/>
             </div>
             <div id="color-yellow" class="color">
-                <img src="bgs/colorbox/yellow.png" alt="color box yellow leaf" />
+                <img src="images/colorbox/yellow.png" alt="color box yellow leaf" />
             </div>
             <div id="color-green" class="color">
-                <img src="bgs/colorbox/green.png" alt="color box green leaf" />
+                <img src="images/colorbox/green.png" alt="color box green leaf" />
             </div>
             <div id="color-light-yellow" class="color">
-                <img src="bgs/colorbox/light-yellow.png" alt="color box light yellow leaf" />
+                <img src="images/colorbox/light-yellow.png" alt="color box light yellow leaf" />
             </div>
             <div id="color-blue" class="color">
-                <img src="bgs/colorbox/blue.png" alt="color box blue leaf" />
+                <img src="images/colorbox/blue.png" alt="color box blue leaf" />
             </div>
             <div id="color-violet" class="color">
-                <img src="bgs/colorbox/violet.png" alt="color box violet leaf" />
+                <img src="images/colorbox/violet.png" alt="color box violet leaf" />
             </div>
             <div id="color-light-violet" class="color">
-                <img src="bgs/colorbox/light-violet.png" alt="color box light violet leaf" />
+                <img src="images/colorbox/light-violet.png" alt="color box light violet leaf" />
             </div>
         </section>
         <section class="box row launch ">
