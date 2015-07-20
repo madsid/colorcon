@@ -14,7 +14,6 @@ $(document).ready(function () {
     if (location.hash.length > 2) {
         location.hash = "";
     };
-
     /* Setting the box height to the window size on browser*/
     var newHeight = $(window).height() - 115;
     if($(window).width()<768){
@@ -88,7 +87,7 @@ $(document).ready(function () {
     if ( ($(window).height() + 100) < $(document).height() ) {
         $('#top-link-block').removeClass('hidden').affix({
             // how far to scroll down before link "slides" into view
-            offset: {top:100}
+            offset: {top:0}
         });
     }
 
@@ -118,6 +117,7 @@ $(document).ready(function () {
         if (hash == 'services') {
             $('.view').html("...");
             $('.view').load('views/services.html', function () {
+              $(".navbar-toggle").click();
             });
             /*$.get("views/services.html", function (data) {
             $('.view').html(data);
@@ -126,6 +126,7 @@ $(document).ready(function () {
         else if (hash == 'get-a-quote') {
             $('.view').html("...");
             $('.view').load('views/get-a-quote.html', function () {
+              $(".navbar-toggle").click();
             });
           }
     });

@@ -145,3 +145,19 @@
 ![ssj2-gohan](http://vignette2.wikia.nocookie.net/dragonball/images/d/db/185-33.jpg/revision/latest/scale-to-width-down/180?cb=20120517142819)
 
 - Few changes in services for better mobile experience
+
+# great-saiyaman
+![great-saiyaman](http://vignette3.wikia.nocookie.net/dragonball/images/e/ea/VidelAndGohan.jpg/revision/latest/scale-to-width-down/180?cb=20110509193404)
+
+- Changes to services menu
+  - removed "team" as it is on front page
+  - replaced "/" seperator with "|"
+  - changed text color from blue to dark grey
+  - removed transparency and added box-shadow
+- moved "back-to-top" out of ".view"
+- click ".navbar-toggle" on loading view -> to hide the menu in mobiles after loading the view
+- added text-shadow to three services
+- new images for individual services
+ - wall painting - #25751824
+ - doodles -  #26846964
+ - texture - #40657736

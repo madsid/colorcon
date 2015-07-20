@@ -47,7 +47,14 @@
             </div><!-- /.container-fluid -->
         </nav>
     </header>
-
+    <!-- Back to top -->
+    <section class="container-fluid">
+    <span id="top-link-block" class="hidden">
+        <a href="#top" class="well well-sm" onclick="$('html,body').animate({scrollTop:0},'fast');return false;">
+            <i class="glyphicon glyphicon-hand-up"></i>
+        </a>
+    </span><!-- /top-link-block -->
+  </section>
     <section class="container-fluid view">
         <section class="choose-color">
           <img src="images/choose-color.png" />
@@ -239,15 +246,7 @@
                     </div>
                 </div>
         </section>
-
-        <!-- Back to top -->
-        <span id="top-link-block" class="hidden">
-            <a href="#top" class="well well-sm" onclick="$('html,body').animate({scrollTop:0},'fast');return false;">
-                <i class="glyphicon glyphicon-hand-up"></i>
-            </a>
-        </span><!-- /top-link-block -->
-    </section>
-
+  </section>
 
     <footer class="container-fluid">
       <div id="contact-top-border"></div>
