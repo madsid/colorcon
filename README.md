@@ -161,3 +161,10 @@
  - wall painting - #25751824
  - doodles -  #26846964
  - texture - #40657736
+
+# post-great-saiyaman
+
+- minor swappings and css changes
+- changed service images
+- changed "get-in-touch" grid from small(col-sm) to medium(col-md)
+- Rate Card (need to add styling)

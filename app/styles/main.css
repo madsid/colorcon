@@ -88,6 +88,15 @@ a.well :hover{
   font-size: 150%;
   margin-right: 10px;
 }
+
+/* jqueryUI Override Styles */
+.ui-widget{
+  font-size: 0.8em;
+}
+.ui-selectmenu-button{
+  min-width: 100px;
+}
+
 /* Website styles */
 body {
    outline:none;
@@ -481,7 +490,7 @@ p#contact-citrus{
 
 .parllax-content h1{
     padding:8px 10px;
-    background-color:#E74C3C;
+    background-color:#222;
     color:#FFF;
 }
 .services-left {
@@ -544,7 +553,7 @@ p#contact-citrus{
         text-transform:uppercase;
         padding:1px 6px;
         font-size:116%;
-        color : #555;
+        color : #4D2A7C;
         outline: 0;
     }
 
@@ -619,6 +628,39 @@ p#contact-citrus{
   -o-border-radius: 50%;
   border-radius: 50%;
 }
+.get-a-quote{
+  width:100%;
+  padding:0;
+  margin:0;
+  display: block;
+}
+.get-a-quote h1{
+  margin: 10px;
+  padding: 8px 16px;
+  background: #222;
+  color: #fff;
+  display:inline-block;
+}
+
+.get-a-quote div#quote-content{
+  padding: 20px;
+  background: #f4f4f4;
+}
+
+#quote-content h3{
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.quote-total {
+  border-top: 1px dashed #ddd;
+  margin-top: 10px;
+}
+.quote-total h4{
+  font-weight: bold;
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
 
@@ -631,7 +673,8 @@ p#contact-citrus{
 
 
     #slide-1{
-        background:url('../images/ServiceSlides/slide1.jpg') 10% no-repeat fixed;
+        background:url('../images/ServiceSlides/slide1.jpg') no-repeat fixed;
+        background-size: cover;
         z-index: -1;
         color:#FFF;
         position:relative;
@@ -643,7 +686,8 @@ p#contact-citrus{
     }
 
     #slide-3 {
-        background:url('../images/ServiceSlides/slide3.jpg') 95% 90% no-repeat fixed;
+        background:url('../images/ServiceSlides/slide3.jpg') no-repeat fixed;
+        background-size: cover;
         z-index: -1;
         color:#FFF;
     }
@@ -655,6 +699,7 @@ p#contact-citrus{
     }
     p#slide-1-text, p#slide-3-text, p#slide-5-text{
         text-shadow: 1px 1px 3px #666;
+        font-weight: 600;
     }
 
 
@@ -803,13 +848,23 @@ p#contact-citrus{
       font-size: 250%;
       padding: 0px 0px 20px 0px;
     }
-    p#contact-citrus{
-      margin-bottom: -50px;
-    }
     #slide-1 p , #slide-2 p , #slide-3 p , #slide-4 p , #slide-5 p {
       font-size: 180%;
     }
     #slide-1, #slide-2, #slide-3, #slide-4, #slide-5 {
         min-height:500px;
     }
+    /*get-a-quote*/
+    .quote-label{
+      text-align: right;
+    }
+    .quote-total h4{
+      text-align: right;
+    }
+}
+/* special margin-bottom for citrus */
+@media screen and (min-width: 970px) {
+  p#contact-citrus{
+    margin-bottom: -50px;
+  }
 }

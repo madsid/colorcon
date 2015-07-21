@@ -1,5 +1,87 @@
 ﻿<section class="container get-a-quote">
     <div class="row">
-      
+      <h1> Get A Quote </h1>
+      <div id="quote-content">
+        <div class="row">
+          <div class="col-sm-6">
+          <div class="row">
+            <div class="col-sm-12">
+              <h3>Options</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 quote-cell quote-label">Carpet Area (sq.ft)</div>
+            <div class="col-sm-6 quote-cell"><input type="text" id="quoteCarpetArea" placeholder="Enter Carpet Area" onfocus='javascript:calculateRate()' onkeyup='javascript:calculateRate()'/></div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 quote-cell quote-label">City</div>
+            <div class="col-sm-6 quote-cell">
+            <select id="quoteCity">
+              <option value="hyderabad" selected>Hyderabad</option>
+              <option value="bengaluru">Bengaluru</option>
+              <option value="chennai">Chennai</option>
+            </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 quote-cell quote-label">Paint Type</div>
+            <div class="col-sm-6 quote-cell">
+            <select id="quotePaint">
+              <option value="basic" selected>Basic Emulsion</option>
+              <option value="classic">Classic (With some Gloss) </option>
+              <option value="glossy">Glossy</option>
+              <option value="eco">Eco</option>
+            </select>
+            </div>
+          </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="row">
+              <div class="col-sm-12">
+                <h3>Estimate</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 quote-cell quote-label">Total Area</div>
+              <div class="col-sm-6 quote-cell"><span id="quoteTotalArea">- -</span></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 quote-cell quote-label">Durability by Company</div>
+              <div class="col-sm-6 quote-cell"><span id="quoteDurability">- -</span></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 quote-cell quote-label">VoC Content</div>
+              <div class="col-sm-6 quote-cell"><span id="quoteVoC">- -</span></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 quote-cell quote-label">Key Features</div>
+              <div class="col-sm-6 quote-cell"><span id="quoteKeyFeat">- -</span></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 quote-cell quote-label">Rate/Sq.ft</div>
+              <div class="col-sm-6 quote-cell"><span id="quoteRate">- -</span></div>
+            </div>
+            <div class="row quote-total">
+              <div class="col-sm-6 quote-cell quote-label"><h4>Total Estimate</h4></div>
+              <div class="col-sm-6 quote-cell"><span id="quoteTotal">- -</span></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
 </section>
+<script type="text/javascript">
+  $(function() {
+    $( "#quoteCity" ).selectmenu({
+      change: function(event, ui){
+        calculateRate();
+      }
+    });
+    $( "#quotePaint" ).selectmenu({
+      change: function(event, ui){
+        calculateRate();
+      }
+    });
+  });
+</script>

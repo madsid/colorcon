@@ -9,6 +9,50 @@ function preloadimages(){
 }
 var currentRoom = "hall"; // global variable used for changing current room
 var sevenColors = ['color-red', 'color-yellow', 'color-green', 'color-light-yellow', 'color-blue', 'color-violet', 'color-light-violet']; // global array of 7 colors
+
+/*Rate Calculator Logic */
+var paintData = {
+    "basic":{
+      "durability":"3-5 Years", "voC":"Low-Med", "keyFeat":"Budget Friendly Paint",
+      "rate": {"hyderabad": 8.50, "bengaluru": 10.50, "chennai": 13.50}
+    },
+    "classic":{
+      "durability":"3-5 Years", "voC":"Low", "keyFeat":"Smooth Finish with some Washability",
+      "rate": {"hyderabad": 11, "bengaluru": 11, "chennai": 19}
+    },
+    "glossy":{
+      "durability":"5 Years", "voC":"Low", "keyFeat":"Super Smooth Wall Finish with a Rich Feel",
+      "rate": {"hyderabad": 14, "bengaluru": 15.50, "chennai": 21}
+     },
+    "eco":{
+      "durability":"5+ Years", "voC":"None", "keyFeat":"Eco-friendly, No VOCs, No Odour, and Smooth Finish",
+      "rate": {"hyderabad": 17.50, "bengaluru": 17.50, "chennai": 24.50}
+     }
+};
+function calculateRate(){
+  //console.log("In Rate Calculation Function");
+  var carpetArea = document.getElementById("quoteCarpetArea").value;
+  var city = document.getElementById("quoteCity").value;
+  var paint = document.getElementById("quotePaint").value;
+  var totalArea = document.getElementById("quoteTotalArea");
+  var durability = document.getElementById("quoteDurability");
+  var voC = document.getElementById("quoteVoC");
+  var keyFeat = document.getElementById("quoteKeyFeat");
+  var rate = document.getElementById("quoteRate");
+  var total = document.getElementById("quoteTotal");
+  if((carpetArea!=null)&&(carpetArea!="")){
+    totalArea.innerHTML=carpetArea*2.5;
+    durability.innerHTML=paintData[paint].durability;
+    voC.innerHTML=paintData[paint].voC;
+    keyFeat.innerHTML=paintData[paint].keyFeat;
+    rate.innerHTML="Rs. "+paintData[paint].rate[city];
+    total.innerHTML="<h4 style='text-align:left;'>Rs. "+carpetArea*2.5*paintData[paint].rate[city]+"</h4>";
+  }
+  else{
+    totalArea.innerHTML=durability.innerHTML=voC.innerHTML=keyFeat.innerHTML=rate.innerHTML=total.innerHTML="--";
+  }
+}
+
 $(document).ready(function () {
 
     if (location.hash.length > 2) {
