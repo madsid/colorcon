@@ -89,14 +89,6 @@ a.well :hover{
   margin-right: 10px;
 }
 
-/* jqueryUI Override Styles */
-.ui-widget{
-  font-size: 0.8em;
-}
-.ui-selectmenu-button{
-  min-width: 100px;
-}
-
 /* Website styles */
 body {
    outline:none;
@@ -652,6 +644,23 @@ p#contact-citrus{
   text-transform: uppercase;
   padding-bottom: 10px;
   border-bottom: 1px solid #ddd;
+}
+.quote-cell{
+  padding: 5px 10px;
+  color: #555;
+}
+.quote-cell input{
+  font-size: .8em;
+  border: solid #bbb 1px;
+  padding: 3px 10px;
+  border-radius: 5px;
+  background: #f6f6f6;
+  color: #555;
+  font-weight: bold;
+}
+.quote-label{
+  font-weight: 600;
+  color: #333;
 }
 .quote-total {
   border-top: 1px dashed #ddd;

@@ -168,3 +168,10 @@
 - changed service images
 - changed "get-in-touch" grid from small(col-sm) to medium(col-md)
 - Rate Card (need to add styling)
+
+# pre-ultimate-gohan
+
+- minor css styling to Rate Card
+- fixed dist issues with jquery UI
+  - removed from bower css and added to main css
+  - moved images req for jquery ui to images/jquery-ui folder and changed links in css file

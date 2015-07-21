@@ -40,7 +40,7 @@ function calculateRate(){
   var keyFeat = document.getElementById("quoteKeyFeat");
   var rate = document.getElementById("quoteRate");
   var total = document.getElementById("quoteTotal");
-  if((carpetArea!=null)&&(carpetArea!="")){
+  if((carpetArea!=null)&&(carpetArea!="")&&(!isNaN(carpetArea))){
     totalArea.innerHTML=carpetArea*2.5;
     durability.innerHTML=paintData[paint].durability;
     voC.innerHTML=paintData[paint].voC;
