@@ -56,7 +56,7 @@ a:focus {
 #top-link-block.affix-top {
     position: absolute; /* allows it to "slide" up into view */
     bottom: -82px;
-    right: 10px;
+    right: 0px;
     -webkit-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
@@ -64,7 +64,7 @@ a:focus {
 #top-link-block.affix {
     position: fixed; /* keeps it on the bottom once in view */
     bottom: 18px;
-    right: 10px;
+    right: 0px;
     -webkit-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
@@ -112,7 +112,7 @@ body {
 
 .box2 {
     height:auto;
-    padding:5% 15%;
+    padding:5% 10%;
 }
 
 /* CSS for the choose color message */
@@ -475,9 +475,8 @@ p#contact-citrus{
 }
 
 .parllax-content {
-    height: 100%;
     z-index: 300;
-    padding: 6% 15%;
+    padding: 6%;
 }
 
 .parllax-content h1{
@@ -494,7 +493,7 @@ p#contact-citrus{
 }
 
 #slide-1 , #slide-2 , #slide-3 , #slide-4 , #slide-5 {
-    min-height:450px;
+    min-height:350px;
 }
 
 #slide-1 p , #slide-2 p , #slide-3 p , #slide-4 p , #slide-5 p {
@@ -605,10 +604,13 @@ p#contact-citrus{
 #team-desc-1, #team-desc-2, #team-desc-3{
     padding: 5% 0%;
     border-top: 1px solid #ddd;
+    text-align:center;
+}
+.team-desc{
+    text-align:justify;
 }
 .team-desc p{
   font-size: 103%;
-  text-align: left;
   padding: 10px 0px;
 }
 #team-desc-1 img, #team-desc-2 img, #team-desc-3 img{
@@ -669,10 +671,41 @@ p#contact-citrus{
 .quote-total h4{
   font-weight: bold;
 }
-
+.doodles{
+  padding:0;
+  margin-top:10px;
+}
+.doodles table{
+  width:100%;
+}
+.doodles .modal-content img{
+  max-width: 100%;
+  max-height: 100%;
+}
+.doodles .modal-dialog,
+.doodles .modal-content {
+    max-height: 90%;
+    background-color: rgba(255,255,255,0);
+    box-shadow: none;
+    border: 1px solid rgba(0,0,0,0);
+    text-align: center;
+}
+.doodle-image{
+  text-align:center;
+}
+.doodle-image .btn-primary {
+    color: #FFF;
+    background-color: #FFF;
+    border-color: #FFF;
+}
+.doodle-image .btn {
+    display: inline-block;
+    padding: 0px;
+    margin-bottom: 0px;
+    border-radius: 0px;
+}
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-
     .service-menu {
         display:block;
     }
@@ -716,9 +749,18 @@ p#contact-citrus{
         padding-left:150px;
         padding-right:150px;
     }
+    .box2 {
+        padding:5% 15%;
+    }
     /*.about {
         margin: 0px 0px;
     }*/
+    #top-link-block.affix-top {
+        right: 10px;
+    }
+    #top-link-block.affix {
+        right: 10px;
+    }
     .well::after {
         content: "Back to Top";
         font-size: 80%;
@@ -852,16 +894,28 @@ p#contact-citrus{
       padding: 0px 10px;
       text-align:justify;
     }
+    #team-desc-1, #team-desc-2, #team-desc-3{
+      text-align: left;
+    }
     /* Contact */
     #contact-desc h1 {
       font-size: 250%;
       padding: 0px 0px 20px 0px;
     }
+    /*services*/
     #slide-1 p , #slide-2 p , #slide-3 p , #slide-4 p , #slide-5 p {
       font-size: 180%;
     }
     #slide-1, #slide-2, #slide-3, #slide-4, #slide-5 {
         min-height:500px;
+    }
+    .parllax-content {
+        padding: 6% 15%;
+        height: 100%;
+    }
+    .doodles .modal-dialog,
+    .doodles .modal-content {
+        height: 120%;
     }
     /*get-a-quote*/
     .quote-label{

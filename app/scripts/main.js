@@ -26,7 +26,7 @@ var paintData = {
      },
     "eco":{
       "durability":"5+ Years", "voC":"None", "keyFeat":"Eco-friendly, No VOCs, No Odour, and Smooth Finish",
-      "rate": {"hyderabad": 17.50, "bengaluru": 17.50, "chennai": 24.50}
+      "rate": {"hyderabad": 16.50, "bengaluru": 17.50, "chennai": 24.50}
      }
 };
 function calculateRate(){

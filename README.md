@@ -163,6 +163,7 @@
  - texture - #40657736
 
 # post-great-saiyaman
+![post-great-saiyaman](http://vignette1.wikia.nocookie.net/dragonball/images/a/a9/DBZGSM4.jpg/revision/latest/scale-to-width-down/180?cb=20090408173723)
 
 - minor swappings and css changes
 - changed service images
@@ -170,8 +171,15 @@
 - Rate Card (need to add styling)
 
 # pre-ultimate-gohan
+![pre-ultimate-gohan](http://vignette2.wikia.nocookie.net/dragonball/images/7/7f/232-52.jpg/revision/latest/scale-to-width-down/180?cb=20090916202504)
 
 - minor css styling to Rate Card
 - fixed dist issues with jquery UI
   - removed from bower css and added to main css
   - moved images req for jquery ui to images/jquery-ui folder and changed links in css file
+- added "color-zombies" link and coming soon page
+
+# ultimate-gohan
+![ultimate-gohan](http://vignette4.wikia.nocookie.net/dragonball/images/7/79/DBZ_-_Mystic_Gohan_Vs_Super_Buu_000.jpg/revision/latest/scale-to-width-down/200?cb=20090406195856)
+
+## Ready to go Live!
