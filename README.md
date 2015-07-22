@@ -183,3 +183,8 @@
 ![ultimate-gohan](http://vignette4.wikia.nocookie.net/dragonball/images/7/79/DBZ_-_Mystic_Gohan_Vs_Super_Buu_000.jpg/revision/latest/scale-to-width-down/200?cb=20090406195856)
 
 ## Ready to go Live!
+
+# post-ultimate-gohan
+![post-ultimate-gohan](http://vignette3.wikia.nocookie.net/dragonball/images/e/ec/VidelGohanPhoto.png/revision/latest/scale-to-width-down/180?cb=20100513090053)
+
+- added auto-scroll to testimonials
