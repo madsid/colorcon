@@ -14,7 +14,7 @@ var sevenColors = ['color-red', 'color-yellow', 'color-green', 'color-light-yell
 var paintData = {
     "basic":{
       "durability":"3-5 Years", "voC":"Low-Med", "keyFeat":"Budget Friendly Paint",
-      "rate": {"hyderabad": 8.50, "bengaluru": 10.50, "chennai": 13.50}
+      "rate": {"hyderabad": 9.50, "bengaluru": 10.50, "chennai": 13.50}
     },
     "classic":{
       "durability":"3-5 Years", "voC":"Low", "keyFeat":"Smooth Finish with some Washability",
