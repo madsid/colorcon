@@ -1,0 +1,280 @@
+﻿<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Color Can</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/ihover.css">
+    <link rel="stylesheet" href="styles/jquery-ui.css">
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#"><img src="images/mock1/logo.png"/></a>
+                </div>
+            </div><!-- /.container-fluid -->
+        </nav>
+    </header>
+    <!-- Back to top -->
+    <section class="container-fluid">
+    <span id="top-link-block" class="hidden">
+        <a href="#top" class="well well-sm" onclick="$('html,body').animate({scrollTop:0},'fast');return false;">
+            <i class="glyphicon glyphicon-hand-up"></i>
+        </a>
+    </span><!-- /top-link-block -->
+
+        <section id="mockup1" class="row box mockup" style="padding: 0px;">
+          <div class="mockup-item" style="margin-left: 506px; margin-top: 253px; width: 216px; height: 170px;">
+            <img src="images/mock1/shelves.png" />
+            <div class="mockup-caption" style="margin-top: -230px;"><h3>Wall Shelf</h3><hr /><h5> Rs. 2000</h5></div>
+          </div>
+          <div class="mockup-item" style="width:185px; height: 255px; margin-top: -273px; margin-left: 32px;">
+            <img src="images/mock1/paintings.png" />
+            <div class="mockup-caption" style="margin-top: -295px;"><h3>Wall Painting</h3><hr /><h5> Rs. 3000</h5></div>
+          </div>
+          <div class="mockup-item" style="width:84px; height: 137px; margin-top: 0px; margin-left: 32.8px;">
+            <img src="images/mock1/lamp.png" />
+            <div class="mockup-caption" style="margin-top: -207px;"><h3>Bedside Lamp</h3><hr /><h5> Rs. 4000</h5></div>
+          </div>
+          <div class="mockup-item" style="width:126px; height: 300px; margin-top: -290px; margin-left: 942px;">
+            <img src="images/mock1/vase.png" />
+            <div class="mockup-caption" style="margin-top: -320px;"><h3>Vase</h3><hr /><h5> Rs. 1000</h5></div>
+          </div>
+        </section>
+        <section id="mockup1-packages" class="row mockup-package" style="padding: 0px;">
+          <div id="quote-content">
+            <div class="row">
+              <div class="col-sm-6">
+              <div class="row">
+                <div class="col-sm-12">
+                  <h3>Economy Package</h3>
+                </div>
+              </div>
+              <div class="row">
+                  <div class="col-sm-6 quote-cell quote-label">Economy Item A</div>
+                  <div class="col-sm-6 quote-cell"><input type="checkbox" id="ei-a" value="1100" onchange="calculateEconomy()"/></div>
+              </div>
+              <div class="row">
+                  <div class="col-sm-6 quote-cell quote-label">Economy Item B</div>
+                  <div class="col-sm-6 quote-cell"><input type="checkbox" id="ei-b" value="2300" onchange="calculateEconomy()"/></div>
+              </div>
+              <div class="row">
+                  <div class="col-sm-6 quote-cell quote-label">Economy Item C</div>
+                  <div class="col-sm-6 quote-cell"><input type="checkbox" id="ei-c" value="4100" onchange="calculateEconomy()"/></div>
+              </div>
+              <div class="row quote-total">
+                <div class="col-sm-6 quote-cell quote-label"><h4>Total Estimate</h4></div>
+                <div class="col-sm-6 quote-cell"><h4 style="text-align: left;">Rs. <span id="economyTotal">8000</span></h4></div>
+              </div>
+
+              </div>
+              <div class="col-sm-6">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <h3>Premium Package</h3>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 quote-cell quote-label">Premium Item A</div>
+                    <div class="col-sm-6 quote-cell"><input type="checkbox" id="pi-a" value="2100" onchange="calculatePremium()"/></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 quote-cell quote-label">Premium Item B</div>
+                    <div class="col-sm-6 quote-cell"><input type="checkbox" id="pi-b" value="3300" onchange="calculatePremium()"/></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 quote-cell quote-label">Premium Item C</div>
+                    <div class="col-sm-6 quote-cell"><input type="checkbox" id="pi-c" value="3100" onchange="calculatePremium()"/></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 quote-cell quote-label">Premium Item D</div>
+                    <div class="col-sm-6 quote-cell"><input type="checkbox" id="pi-d" value="1200" onchange="calculatePremium()"/></div>
+                </div>
+                <div class="row quote-total">
+                  <div class="col-sm-6 quote-cell quote-label"><h4>Total Estimate</h4></div>
+                  <div class="col-sm-6 quote-cell"><h4 style="text-align: left;">Rs. <span id="premiumTotal">12000</span></h4></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+  </section>
+
+    <footer class="container-fluid">
+      <div id="contact-top-border"></div>
+        <section class="box2 row contact">
+            <div id="contact-desc">
+                <h1> Get In touch</h1>
+                <div class="row">
+                  <div class="col-md-3">
+                  <p>
+                      <b>HEADQUARTERS: </b><br />
+                      32 GVP,<br />
+                      SwaranAndhra Phase I,<br />
+                      Yapral, Secunderabad,<br />
+                      Telangana - 500087.
+                  </p>
+                </div>
+                <div class="col-md-3">
+                <p>
+                    <b> OFFICE: </b> <br />
+                    COLOR CAN, <br />
+                    First floor, Plot No. 10, <br />
+                    SRK Colony, West Marredpally, <br />
+                    Secunderabad, <br />
+                    Telangana - 500026.
+                </p>
+              </div>
+              <div class="col-md-3">
+                <p id="contact-phone"><i class="glyphicon glyphicon-earphone"></i>&nbsp;+91 9849 950 705</p>
+                <p><i class="glyphicon glyphicon-earphone"></i>&nbsp;+91 9840 923 276</p>
+                <p><i class="glyphicon glyphicon-envelope"></i>&nbsp;arjun@colorcan.in </p>
+
+                <p>
+                  <a href="http://www.colorcan.in" target="_blank"><i class="fa fa-globe"></i></a>
+                  <a href="http://facebook.com/colorcaninc" target="_blank"><i class="fa fa-facebook-square"></i></a>
+                  <!--<a href="#" target="_blank"><i class="fa fa-google-plus-square"></i></a>
+                  <a href="#" target="_blank"><i class="fa fa-twitter-square"></i></a>
+                  <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
+                  <a href="#" target="_blank"><i class="fa fa-pinterest"></i></a>-->
+                </p>
+              </div><div class="col-md-3">
+                <p>
+                  COLOR CAN ENSURES
+                  <!-- Scale up-->
+                      <!-- normal -->
+                    <div class="contact-extras-item">
+                      <div class="ih-item circle effect6 scale_up"><a>
+                          <div class="img"><img src="images/quality.svg" alt="img"></div>
+                          <div class="info">
+                            <h3>Quality</h3>
+                          </div></a></div>
+                        </div>
+                      <!-- end normal -->
+                      <!-- normal -->
+                      <div class="contact-extras-item">
+                      <div class="ih-item circle effect6 scale_up"><a>
+                          <div class="img"><img src="images/safety.svg" alt="img"></div>
+                          <div class="info">
+                            <h3>Safety</h3>
+                          </div></a></div>
+                        </div>
+                      <!-- end normal -->
+                      &amp;
+                      <!-- normal -->
+                      <div class="contact-extras-item">
+                      <div class="ih-item circle effect6 scale_up"><a>
+                          <div class="img"><img src="images/fun.svg" alt="img"></div>
+                          <div class="info">
+                            <h3 style="line-height:12px;padding-top:5px;">a Fun Filled Experience</h3>
+                          </div></a></div>
+                        </div>
+                      <!-- end normal -->
+                    <div style="clear:both"></div>
+                    <br />
+                  <!-- end Scale up-->
+              </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <p id="contact-citrus">
+                    <a href="http://www.citrusdesigns.in" target="_blank">
+                      <img src="images/citrus.svg" />
+                    </a>
+                   </p>
+                </div>
+              </div>
+            </div>
+        </section>
+    </footer>
+
+        <!-- build:js(.) scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="bower_components/modernizr/modernizr.js"></script>
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/jquery-ui/jquery-ui.js"></script>
+        <script src="bower_components/waypoints/lib/noframework.waypoints.min.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+        <script>
+         function calculateEconomy(){
+           var total = 8000;
+           if(document.getElementById("ei-a").checked){
+            total+=parseInt(document.getElementById("ei-a").value);
+           }
+           if(document.getElementById("ei-b").checked){
+            total+=parseInt(document.getElementById("ei-b").value);
+           }
+           if(document.getElementById("ei-c").checked){
+            total+=parseInt(document.getElementById("ei-c").value);
+           }
+           document.getElementById("economyTotal").innerHTML=total;
+         }
+         function calculatePremium(){
+           var total = 12000;
+           if(document.getElementById("pi-a").checked){
+            total+=parseInt(document.getElementById("pi-a").value);
+           }
+           if(document.getElementById("pi-b").checked){
+            total+=parseInt(document.getElementById("pi-b").value);
+           }
+           if(document.getElementById("pi-c").checked){
+            total+=parseInt(document.getElementById("pi-c").value);
+           }
+           if(document.getElementById("pi-d").checked){
+            total+=parseInt(document.getElementById("pi-d").value);
+           }
+           document.getElementById("premiumTotal").innerHTML=total;
+         }
+        </script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+          (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+          function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+          e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+          e.src='//www.google-analytics.com/analytics.js';
+          r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+          ga('create','UA-65565370-1');ga('send','pageview');
+        </script>
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600,800' rel='stylesheet' type='text/css'>
+
+        <!-- build:js(.) scripts/plugins.js -->
+        <script src="bower_components/bootstrap/js/affix.js"></script>
+        <script src="bower_components/bootstrap/js/alert.js"></script>
+        <script src="bower_components/bootstrap/js/dropdown.js"></script>
+        <script src="bower_components/bootstrap/js/tooltip.js"></script>
+        <script src="bower_components/bootstrap/js/modal.js"></script>
+        <script src="bower_components/bootstrap/js/transition.js"></script>
+        <script src="bower_components/bootstrap/js/button.js"></script>
+        <script src="bower_components/bootstrap/js/popover.js"></script>
+        <script src="bower_components/bootstrap/js/carousel.js"></script>
+        <script src="bower_components/bootstrap/js/scrollspy.js"></script>
+        <script src="bower_components/bootstrap/js/collapse.js"></script>
+        <script src="bower_components/bootstrap/js/tab.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
