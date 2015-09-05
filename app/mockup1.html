@@ -46,15 +46,27 @@
           </div>
           <div class="mockup-item" style="width:185px; height: 255px; margin-top: -273px; margin-left: 32px;">
             <img src="images/mock1/paintings.png" />
-            <div class="mockup-caption" style="margin-top: -295px;"><h3>Wall Painting</h3><hr /><h5> Rs. 3000</h5></div>
+            <div class="mockup-caption" style="margin-top: -295px;"><h3>Wall Painting</h3><hr /><h5> Rs. 2500</h5></div>
           </div>
-          <div class="mockup-item" style="width:84px; height: 137px; margin-top: 0px; margin-left: 32.8px;">
+          <div class="mockup-item" style="width:84px; height: 137px; margin-top: -.7px; margin-left: 32.8px; position:relative; z-index: 900;">
             <img src="images/mock1/lamp.png" />
-            <div class="mockup-caption" style="margin-top: -207px;"><h3>Bedside Lamp</h3><hr /><h5> Rs. 4000</h5></div>
+            <div class="mockup-caption" style="margin-top: -207px;"><h3>Bedside Lamp</h3><hr /><h5> Rs. 2300</h5></div>
           </div>
-          <div class="mockup-item" style="width:126px; height: 300px; margin-top: -290px; margin-left: 942px;">
+          <div class="mockup-item" style="width:126px; height: 300px; margin-top: -289px; margin-left: 942px;">
             <img src="images/mock1/vase.png" />
-            <div class="mockup-caption" style="margin-top: -320px;"><h3>Vase</h3><hr /><h5> Rs. 1000</h5></div>
+            <div class="mockup-caption" style="margin-top: -320px;"><h3>Vase</h3><hr /><h5> Rs. 1100</h5></div>
+          </div>
+          <div class="mockup-item" style="width:164px; height: 143px; margin-top: -61px; margin-left: 0;position:relative; z-index: 800;">
+            <img src="images/mock1/side-table.png" />
+            <div class="mockup-caption" style="margin-top: -207px; margin-left: 100px;"><h3>Side Table</h3><hr /><h5> Rs. 3000</h5></div>
+          </div>
+          <div class="mockup-item" style="width:562px; height: 172px; margin-top: -210px; margin-left: 113px; position:relative; z-index: 700;">
+            <img src="images/mock1/bed.png" />
+            <div class="mockup-caption" style="margin-top: -190px; margin-left: 250px;"><h3>Bed</h3><hr /><h5> Rs. 17000</h5></div>
+          </div>
+          <div class="mockup-item" style="width:104px; height: 192px; margin-top: -384px; margin-left: 1069px;">
+            <img src="images/mock1/mirror.png" />
+            <div class="mockup-caption" style="margin-top: -250px;"><h3>Mirror</h3><hr /><h5> Rs. 3000</h5></div>
           </div>
         </section>
         <section id="mockup1-packages" class="row mockup-package" style="padding: 0px;">
@@ -67,20 +79,28 @@
                 </div>
               </div>
               <div class="row">
-                  <div class="col-sm-6 quote-cell quote-label">Economy Item A</div>
-                  <div class="col-sm-6 quote-cell"><input type="checkbox" id="ei-a" value="1100" onchange="calculateEconomy()"/></div>
+                  <div class="col-sm-6 quote-cell quote-label">Happy Green Theme Wall Design</div>
+                  <div class="col-sm-6 quote-cell"><input type="checkbox" id="ei-a" value="10000" onchange="calculateEconomy()" checked disabled/>  Rs. 10000</div>
               </div>
               <div class="row">
-                  <div class="col-sm-6 quote-cell quote-label">Economy Item B</div>
-                  <div class="col-sm-6 quote-cell"><input type="checkbox" id="ei-b" value="2300" onchange="calculateEconomy()"/></div>
+                  <div class="col-sm-6 quote-cell quote-label">Wall Painting</div>
+                  <div class="col-sm-6 quote-cell"><input type="checkbox" id="ei-b" value="2500" onchange="calculateEconomy()" checked/>  Rs. 2500</div>
               </div>
               <div class="row">
-                  <div class="col-sm-6 quote-cell quote-label">Economy Item C</div>
-                  <div class="col-sm-6 quote-cell"><input type="checkbox" id="ei-c" value="4100" onchange="calculateEconomy()"/></div>
+                  <div class="col-sm-6 quote-cell quote-label">Bedside Lamp</div>
+                  <div class="col-sm-6 quote-cell"><input type="checkbox" id="ei-c" value="2300" onchange="calculateEconomy()"/>  Rs. 2300</div>
+              </div>
+              <div class="row">
+                  <div class="col-sm-6 quote-cell quote-label">Vase</div>
+                  <div class="col-sm-6 quote-cell"><input type="checkbox" id="ei-d" value="1100" onchange="calculateEconomy()"/>  Rs. 1100</div>
+              </div>
+              <div class="row">
+                  <div class="col-sm-6 quote-cell quote-label">Mirror</div>
+                  <div class="col-sm-6 quote-cell"><input type="checkbox" id="ei-e" value="3000" onchange="calculateEconomy()"/>  Rs. 3000</div>
               </div>
               <div class="row quote-total">
                 <div class="col-sm-6 quote-cell quote-label"><h4>Total Estimate</h4></div>
-                <div class="col-sm-6 quote-cell"><h4 style="text-align: left;">Rs. <span id="economyTotal">8000</span></h4></div>
+                <div class="col-sm-6 quote-cell"><h4 style="text-align: left;">Rs. <span id="economyTotal"></span></h4></div>
               </div>
 
               </div>
@@ -91,24 +111,28 @@
                   </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-6 quote-cell quote-label">Premium Item A</div>
-                    <div class="col-sm-6 quote-cell"><input type="checkbox" id="pi-a" value="2100" onchange="calculatePremium()"/></div>
+                    <div class="col-sm-6 quote-cell quote-label">Items in Economy Package</div>
+                    <div class="col-sm-6 quote-cell"><input type="checkbox" id="pi-a" value="18900" onchange="calculatePremium()" checked disabled/>  Rs. 18900</div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-6 quote-cell quote-label">Premium Item B</div>
-                    <div class="col-sm-6 quote-cell"><input type="checkbox" id="pi-b" value="3300" onchange="calculatePremium()"/></div>
+                    <div class="col-sm-6 quote-cell quote-label">False Ceiling</div>
+                    <div class="col-sm-6 quote-cell"><input type="checkbox" id="pi-b" value="15000" onchange="calculatePremium()" checked disabled/>  Rs. 15000</div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-6 quote-cell quote-label">Premium Item C</div>
-                    <div class="col-sm-6 quote-cell"><input type="checkbox" id="pi-c" value="3100" onchange="calculatePremium()"/></div>
+                    <div class="col-sm-6 quote-cell quote-label">Bed</div>
+                    <div class="col-sm-6 quote-cell"><input type="checkbox" id="pi-c" value="17000" onchange="calculatePremium()" checked/>  Rs. 17000</div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-6 quote-cell quote-label">Premium Item D</div>
-                    <div class="col-sm-6 quote-cell"><input type="checkbox" id="pi-d" value="1200" onchange="calculatePremium()"/></div>
+                    <div class="col-sm-6 quote-cell quote-label">Side Table</div>
+                    <div class="col-sm-6 quote-cell"><input type="checkbox" id="pi-d" value="3000" onchange="calculatePremium()"/>  Rs. 3000</div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 quote-cell quote-label">Wall Shelf</div>
+                    <div class="col-sm-6 quote-cell"><input type="checkbox" id="pi-e" value="2000" onchange="calculatePremium()"/>  Rs. 2000</div>
                 </div>
                 <div class="row quote-total">
                   <div class="col-sm-6 quote-cell quote-label"><h4>Total Estimate</h4></div>
-                  <div class="col-sm-6 quote-cell"><h4 style="text-align: left;">Rs. <span id="premiumTotal">12000</span></h4></div>
+                  <div class="col-sm-6 quote-cell"><h4 style="text-align: left;">Rs. <span id="premiumTotal"></span></h4></div>
                 </div>
               </div>
             </div>
@@ -216,7 +240,7 @@
         <!-- endbuild -->
         <script>
          function calculateEconomy(){
-           var total = 8000;
+           var total = 0;
            if(document.getElementById("ei-a").checked){
             total+=parseInt(document.getElementById("ei-a").value);
            }
@@ -226,10 +250,16 @@
            if(document.getElementById("ei-c").checked){
             total+=parseInt(document.getElementById("ei-c").value);
            }
+           if(document.getElementById("ei-d").checked){
+            total+=parseInt(document.getElementById("ei-d").value);
+           }
+           if(document.getElementById("ei-e").checked){
+            total+=parseInt(document.getElementById("ei-e").value);
+           }
            document.getElementById("economyTotal").innerHTML=total;
          }
          function calculatePremium(){
-           var total = 12000;
+           var total = 0;
            if(document.getElementById("pi-a").checked){
             total+=parseInt(document.getElementById("pi-a").value);
            }
@@ -242,11 +272,18 @@
            if(document.getElementById("pi-d").checked){
             total+=parseInt(document.getElementById("pi-d").value);
            }
+           if(document.getElementById("pi-e").checked){
+            total+=parseInt(document.getElementById("pi-e").value);
+           }
            document.getElementById("premiumTotal").innerHTML=total;
+         }
+         window.onload=function(){
+           calculateEconomy();
+           calculatePremium();
          }
         </script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.
         <script>
           (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
           function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
@@ -256,7 +293,7 @@
           ga('create','UA-65565370-1');ga('send','pageview');
         </script>
 
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600,800' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600,800' rel='stylesheet' type='text/css'> -->
 
         <!-- build:js(.) scripts/plugins.js -->
         <script src="bower_components/bootstrap/js/affix.js"></script>
